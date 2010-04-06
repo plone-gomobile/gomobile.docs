@@ -20,12 +20,12 @@ Supported operating systems are all operating systems which run Plone
 Prerequisitements
 -----------------
 
-The following must be installed to run Plone with Go Mobile add-on. 
-These are covered by the installation instructions.
+The following software stack must be installed to run Go Mobile for Plone add-on. 
+All these are covered by the installation instructions here.
 
 * Plone 3 / Python 2.4 
 
-* lxml 
+* lxml / libxml2 library
 
 * Python Imaging Library
 
@@ -34,7 +34,7 @@ These are covered by the installation instructions.
 For development
 ===============
 
-The following is needed only for development:
+The following is also needed for software development:
 
 * GCC compiler (MingW on Windows)
 
@@ -217,10 +217,18 @@ Add Go Mobile snippets as described in the following::
         
      parts += ${gomobile.config:parts}
      
+     # Note: Uncomment the the correct line below whether you want to checkout the repositories
+     # with commit access or not
      extends =
         ...
-        http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.commit-access.cfg
+        # Commit access (you need to have approved Go Mobile for Plone commit rights)
+        # and Plone collective commit rights
+        # http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.commit-access.cfg
 
+        # No commit access - you just want to play with the source and 
+        # submit changes as patches
+        http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.anonymous.cfg
+        
      extensions = mr.developer
 
      eggs =
@@ -240,12 +248,9 @@ Add Go Mobile snippets as described in the following::
 *gomobile.trunk.cfg* is an buildout extension file defining where to get trunk source code
 using `Mr. Developer <http://pypi.python.org/pypi/mr.developer>`_ buildout extension.
 
-.. note ::
-
-       If you do not have Google Code membership or commit access you may need to replace
-       address prefixed with *https* as *http* in gomobile.trunk.cfg. For this,
-       you need to make a local copy of gomobile.trunk.cfg, edit it and
-       change extensions= in buildout.cfg to point to the local file.
+*gomobile.trunk.commit-access.cfg* and *gomobile.trunk.anonymous.cfg* are 
+alternative config files extending *gomobile.trunk.cfg* with the 
+setting of HTTP or priviledged HTTPS checkout protocol.
        
 .. note ::
 
@@ -255,6 +260,11 @@ using `Mr. Developer <http://pypi.python.org/pypi/mr.developer>`_ buildout exten
         
 Making code repository certificates available in Subversion
 ===========================================================
+
+.. note ::
+        
+        This is only needed if you are doing the trunk
+        checkout with commit access.
 
 Subversion *svn* command is reluctant do deal with repositories
 for which the user has not manually accepted HTTPS certificate.

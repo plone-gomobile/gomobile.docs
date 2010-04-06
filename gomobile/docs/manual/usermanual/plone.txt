@@ -2,6 +2,10 @@
  About Plone CMS
 =======================
 
+This page is intended for audience who needs to know 
+why they should choose a content publishing technology 
+based on Plone CMS.
+
 As being based on one of most powerful, 
 award winning, open source content management
 system, Go Mobile comes with hundreds of features 

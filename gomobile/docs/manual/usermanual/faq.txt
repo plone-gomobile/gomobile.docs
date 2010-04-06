@@ -9,6 +9,17 @@ Introduction
 
 This document contains Frequently Asked Questions regarding Go Mobile and mobilizing Plone sites.
 
+What is Go Mobile for Plone multichannel CMS?
+===============================================
+
+Go Mobile for Plone is a set of add-on products which will turn your award winning open source 
+Plone CMS to multichannel publishing platform. The project also hosts Python framework
+products which allows you to do develop mobile features for any Python web application.
+
+The official name of the product is *Go Mobile for Plone*. Plone is a registered
+trademark of Plone foundation. Additionally, *Go Mobile for Plone multichannel 
+CMS* name can be used in the contexts where the writer wants to clarify the purpose of the product.    
+
 When I need Go Mobile add-on product on my site?
 =================================================
 

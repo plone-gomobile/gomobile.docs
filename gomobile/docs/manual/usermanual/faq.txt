@@ -1,0 +1,80 @@
+=====================
+ FAQ
+=====================
+
+.. contents ::
+
+Introduction
+------------
+
+This document contains Frequently Asked Questions regarding Go Mobile and mobilizing Plone sites.
+
+When I need Go Mobile add-on product on my site?
+=================================================
+
+* You want to have optimal mobile user experience
+
+* You want to basic and feature phones, besides smartphones (your site has lots of traffic from the developing countries)
+
+* You want to have your site to have special position in mobile search engines (Google Mobile)
+
+* Mobile site needs a special navigation elements and rules (no navigation portlet available!)
+
+* You want to use special mobile elements, like clickable phone numbers, SMS, geolocation
+
+* You want to have different front page for web and mobile
+
+* You have an existing Plone site which you need to roll-out a mobile version easily
+
+* You need to use special visitor analytics for mobile visitors (e.g. to see what kind of devices they use),
+  using a service like Google Analytics Mobile
+
+When mobile.css is enough?
+==============================
+
+Mobile CSS works in the cases where
+
+* Theme has been designed to be mobile compatible grounds up and has little or no image elements
+
+* Content does not need special adjustment for mobile (i.e. text only)
+
+* The same layout model can be used both for mobile and web
+
+* Mobile phones still need to be detected (user agent sniffing)
+
+Mobile CSS does not work when
+
+* Different layout elements need to be on web and mobile, for example because of size of relative elements, 
+  content images
+
+* Different content is needed for web and mobile. Usually at least different front page, or landing page,
+  must be created separate for each media
+  
+* Separate mobile analytics is needed
+
+When creating a separate mobile site using a theming proxy (Deliverance/XDV) is enough?
+==============================================================================================
+
+Using a theming proxy works when
+
+* The same content is served both for web and mobile and the content does not need to be
+  discriminated by media
+  
+* The same layout elements can be 
+
+* Mobile phones still need to be detected (user agent sniffing)
+
+The theming proxy does not do this for you and you still need to create
+
+* Different content is needed for web and mobile. Usually at least different front page, or landing page,
+  must be created separate for each media
+
+* User agent sniffing
+
+* Image resizing
+
+* Switching links to allow user to chooose between web and mobile site  
+
+
+ 
+ 

@@ -1,6 +1,6 @@
 ======================
  Theming
-=====================
+======================
 
 .. contents ::
 
@@ -228,7 +228,9 @@ and it correctly extends the existing Go Mobile Default Theme.
 	
 	</object>
 
-* Declare your add-on installer profile::
+* Declare your add-on installer profile
+
+::
 
   <genericsetup:registerProfile
       name="default"
@@ -247,7 +249,9 @@ and it correctly extends the existing Go Mobile Default Theme.
 	
 	    """
 
-* Declare your theme layer for Zope::
+* Declare your theme layer for Zope
+
+::
  
   <interface
     interface=".interfaces.IThemeLayer"

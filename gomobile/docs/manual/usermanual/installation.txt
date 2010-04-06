@@ -62,15 +62,21 @@ OSX
 * Use `collective.buildout <http://svn.plone.org/svn/collective/buildout/python/src/docs>`_
   to create a Python 2.4 interpreter from source
   
-* Activate virtualenv of Python 2.4 interpreter (this will modify default look-up paths of shell)::
+* Activate virtualenv of Python 2.4 interpreter (this will modify default look-up paths of shell)
+
+::
 
   source ~/python-buildout/python2.4/bin/activate
     
-* Install Plone project templates::
+* Install Plone project templates
+
+::
 
   easy_install ZopeSkel
   
-* Create Plone 3 buildout::
+* Create Plone 3 buildout
+
+::
 
   paster create -t plone_buildout plone3_buildout
   
@@ -90,19 +96,27 @@ Install virtualenv::
 
     easy_install virtualenv
     
-Create Python environment for your Plone::
+Create Python environment for your Plone
+
+::
 
     virtualenv --no-site-packages -p /usr/bin/python2.4 plone-python
     
-Activate environment::
+Activate environment
+
+::
 
     source plone-python/bin/activate
          
-* Install Plone project templates::
+* Install Plone project templates
+
+::
 
   easy_install ZopeSkel
   
-* Create Plone 3 buildout::
+* Create Plone 3 buildout
+
+::
 
   paster create -t plone_buildout plone3_buildout
 
@@ -182,7 +196,7 @@ Use *Site setup* control panel in Plone and its *Add-on products* tool to instal
 
 * *Go Mobile Default Theme* or any other mobile theme is needed always
 
-* *Go Mobile Convergence* is needed if you wish to publish **both* web and mobile content on the same site
+* *Go Mobile Convergence* is needed if you wish to publish **both** web and mobile content on the same site
 
 Trunk version installation
 --------------------------

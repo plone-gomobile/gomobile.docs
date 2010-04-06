@@ -10,6 +10,7 @@ using Go Mobile mobile CMS product.
    :maxdepth: 2
    
    features
+   faq
    convergence
    license
    optimal_experience

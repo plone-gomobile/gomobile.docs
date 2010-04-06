@@ -1,5 +1,5 @@
-Features
---------
+Go Mobile add-on Features
+-------------------------
 
 * Based on award-winning, open source, ::doc::`Plone content management system </usermanual/plone>` 
   technology

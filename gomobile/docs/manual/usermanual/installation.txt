@@ -1,6 +1,6 @@
-===========================
- Installation instructions
-===========================
+================================
+ Installing Go Mobile for Plone
+================================
 
 .. contents :: :local:
 

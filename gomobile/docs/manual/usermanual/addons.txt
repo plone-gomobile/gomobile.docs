@@ -1,5 +1,5 @@
 ===================================
- Supporting Plone add-on products
+ Plone add-on product support
 ===================================
 
 .. contents :: :local:

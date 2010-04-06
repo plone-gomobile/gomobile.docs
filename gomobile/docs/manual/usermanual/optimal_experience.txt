@@ -1,6 +1,6 @@
-==========================
- Optimal user experience
-==========================
+====================================================
+ Optimal user experience with Go Mobile for Plone
+====================================================
 
 Go Mobile tries hard to achieve the most optimal mobile browsing experience,
 and it success quite well. 

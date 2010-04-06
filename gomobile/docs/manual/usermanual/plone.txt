@@ -1,5 +1,5 @@
 =======================
- Plone
+ About Plone CMS
 =======================
 
 As being based on one of most powerful, 

@@ -1,10 +1,10 @@
-====================
- Feature varying
-====================
+========================================
+ Special mobile site features 
+========================================
 
-Go Mobile can disable site features based on the used mobile browser.
+Go Mobile can enable and disable special site features based on the used mobile browser.
 
-Here are some examples
+Below are some examples
 
 * Page visuals and CSS are adjusted for 
 

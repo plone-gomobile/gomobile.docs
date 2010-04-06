@@ -1,5 +1,5 @@
 ===========================
- Mobile handset detection
+ Mobile browser detection
 ===========================
 
 Go Mobile aims to strive to support every HTML capable phone on this planet, 

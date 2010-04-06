@@ -1,6 +1,6 @@
-=========================
- Content mobile options
-=========================
+==============================================================================
+ Fite-tuning publishing options for mobile 
+==============================================================================
 
 Go Mobile defines mobile aware options (i.e. mobile behavior) 
 for each content item.

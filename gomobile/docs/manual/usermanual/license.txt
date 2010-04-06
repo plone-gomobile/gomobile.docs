@@ -1,6 +1,6 @@
-=====================
- License
-=====================
+=======================================
+ License and open source contributions
+=======================================
 
 All Go Mobile code falls under GPL 2 license.
 All Go Mobile code is copyrighted by mFabrik Reseacrh Oy.
@@ -48,7 +48,7 @@ may have features depending on the availability of their code
 * `Wurlf <http://wurfl.sourceforge.net/licence.php>`_ device database
   does not fall under copyright according to the authors
 
-* `Pywurlf <http://celljam.net/>«_ is copyrighted by David Necas  
+* `Pywurlf <http://celljam.net/>ï¿½_ is copyrighted by David Necas  
   & co. and distributed under LGPL license
   
 * `Python Imaging Library <http://www.pythonware.com/products/pil/>`_ is 

@@ -1,6 +1,6 @@
-========================
- Convergence publishing
-========================
+=========================
+ Multichannel publishing
+=========================
 
 Wuth Go Mobile Convergence add-on 
 you can fine tune how your content is published across

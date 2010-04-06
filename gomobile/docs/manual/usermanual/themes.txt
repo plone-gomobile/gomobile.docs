@@ -1,6 +1,6 @@
-==========
- Themes
-==========
+============================================================
+ Choosing and creating mobile theme for your site 
+============================================================
 
 Theming aims to have great visuals, without sacrifying speed and usability,
 on every kind of mobile phone. 

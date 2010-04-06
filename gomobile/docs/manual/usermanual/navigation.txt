@@ -1,5 +1,5 @@
 ===========================
- Mobile navigation
+ Navigation on mobile site 
 ===========================
 
 .. contents :: :local:

@@ -2,7 +2,7 @@
  Mobile navigation
 ===========================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 -------------

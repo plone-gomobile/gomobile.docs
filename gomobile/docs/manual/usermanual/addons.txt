@@ -2,7 +2,7 @@
  Supporting Plone add-on products
 ===================================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 -------------

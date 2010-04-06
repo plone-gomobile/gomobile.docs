@@ -2,7 +2,7 @@
  Site rendering modes
 ============================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 ------------

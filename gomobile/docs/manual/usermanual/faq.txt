@@ -2,7 +2,7 @@
  FAQ
 =====================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 ------------

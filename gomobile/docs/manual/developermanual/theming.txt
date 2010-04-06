@@ -2,7 +2,7 @@
  Theming
 ======================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 ------------

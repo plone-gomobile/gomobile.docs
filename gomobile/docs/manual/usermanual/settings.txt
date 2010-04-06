@@ -4,7 +4,7 @@
 
 All Go Mobile settings can be configured through web interface.
 
-.. contents ::
+.. contents :: :local:
 
 
 mobile_domain_prefixes

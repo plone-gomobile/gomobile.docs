@@ -2,7 +2,7 @@
  Redirecting
 ===================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 ------------

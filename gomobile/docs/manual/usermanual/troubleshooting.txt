@@ -2,7 +2,7 @@
 Troubleshooting
 ===============
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 ------------

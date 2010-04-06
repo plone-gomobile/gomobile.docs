@@ -2,8 +2,8 @@
  Architecture
 =======================
 
-.. contents ::
-
+.. contents :: :local: 
+                
 Introduction
 -------------
 

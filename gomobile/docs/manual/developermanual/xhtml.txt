@@ -2,7 +2,7 @@
 XHTML compatibility
 ===================
 
-.. contents ::
+.. contents :: :local:
 
 Introduction
 ------------

@@ -4,6 +4,24 @@ Introduction
 This package contains Go Mobile mobile add-on product for Plone documentation in Sphinx format.
 Necessary scripts to generate HTML documentation and upload it to a Plone site are supplied.
 
+Compiling the documentation
+----------------------------
+
+Example::
+
+        source ~/py24/bin/activate # Enter virtualenv
+        
+        python bootstrap.py 
+        
+        bin/buildout # will return error
+        
+        bin/develop co ""
+        
+        bin/buildout
+        
+        bin/sphinx-build manual build
+        
+
 Author
 ------
 

@@ -1,0 +1,16 @@
+=================
+Developer Manual
+=================
+
+Documentation for people how develop mobile sites using Go Mobile product.
+
+.. toctree::
+   :maxdepth: 2
+   
+   architecture   
+   modes
+   plugins
+   theming
+   transformations
+   xhtml
+   

@@ -1,0 +1,13 @@
+Go Mobile documentation
+==================================
+
+This is documentation for Go Mobile for Plone mobile CMS product.
+
+Table of Content
+================
+
+.. toctree::
+   :maxdepth: 2
+
+   usermanual/index
+   developermanual/index

@@ -25,7 +25,7 @@ Best practices
 
 * Use namespace "gomobiletheme" for Go Mobile themes
 
-* Read ::doc::`Transformations </developermanual/transformations>` for info about different CSS files
+* Read :doc:`Transformations </developermanual/transformations>` for info about different CSS files
   and their purposes.
   
 gomobiletheme.basic
@@ -143,10 +143,10 @@ Avoid old style skins folder
 For basic themes you generally don't need to customize main_template or old skin layers files,
 so you do not need to have *skins* structure in your own theme
   
-* <img> images should be run through ::doc::`mobile image resize </developermanual/transformations>`
+* <img> images should be run through :doc:`mobile image resize </developermanual/transformations>`
 
 * All template code which contains WYSIWYG editable HTML should run through 
-  ::doc::`HTML processor </developermanual/transformations>` to make it mobile compatible.
+  :doc:`HTML processor </developermanual/transformations>` to make it mobile compatible.
 
 Mobile theme specials
 =====================

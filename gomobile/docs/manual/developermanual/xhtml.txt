@@ -16,7 +16,7 @@ if you wish to make your pages appear in the mobile search results.
 If you cannot provide XHTML compatible output, do not expect
 your pages appear in mobile search engines.
 
-See ::doc::`Sniffing chapter </usermanual/sniffing>` for more information.
+See :doc:`Sniffing chapter </usermanual/sniffing>` for more information.
 
 HTML flavor information
 -----------------------

@@ -12,7 +12,7 @@ over different handset databases.
 * mobile.sniffer abstraction layer can source information from multiple databases,
   reaching potential of over 10000 known handset records.
 
-* See ::doc::`what sites features are varied by the handset </usermanual/varying>` 
+* See :doc:`what sites features are varied by the handset </usermanual/varying>` 
 
 * Free `Wurfl database <http://wurfl.sourceforge.net/>`_ is shipped with the product so that handset detection
   works out-of-the-box

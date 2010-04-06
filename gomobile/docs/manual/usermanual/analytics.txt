@@ -32,7 +32,7 @@ How to set-up a tracker (Google)
 
 * Extract tracking id which is in format "MO-1234-12"
 
-* Now, go to ::doc::`Go Mobile Settings`
+* Now, go to :doc:`Go Mobile Settings`
 
 * As a *tracker_name*, enter *google*
 

@@ -7,7 +7,18 @@
 Introduction
 -------------
 
-This page gives overview of Go Mobile architecture.
+This page gives overview of Go Mobile for Plone architecture.
+
+Go Mobile for Plone is divided to several Python packages, packed as Python eggs.
+Egg files are distributed through Python egg index services, like Python Package Index (PyPi).
+By dividing the product to small components we achieve
+
+* Better code reuse. mobile.* packages do not have Zope dependencies and 
+  can be used with any Pytohn CMS.
+
+* Release early, release often: Bug fix releases can be rolled out for individual packages.
+
+Some of the functionality is built on existing Python libraries (vObject, lxml, Python Imaging Library).
 
 Architecture overview
 ---------------------
@@ -24,11 +35,12 @@ Plone 3 CMS is built on the top of Python runtime.
 Python is a remarkably powerful dynamic programming language that is used in a wide variety of application domains.
 Specifically, Python version 2.4 is used (will be changed in Plone 4).
 
-Python mobile framework libraries
-----------------------------------
+Generic mobile.* libraries for Python
+--------------------------------------
 
-This can be used with any Python project.
-We have succesfully used them with Django sites.
+mobile.* namespace packages can be used with any Python project.
+For example, mFabrik team has succesfully used the same codebase
+for Django CMS and Ploen sites.
 
 mobile.sniffer
 ==============
@@ -57,7 +69,7 @@ This package contains rules-of-thumb how to generate HTML compatible for differe
 
 * Phone number links
 
-* Openining a navigator
+* Openining a GPS navigator / maps application
 
 * Downloadable vCards
 
@@ -76,13 +88,19 @@ mobile.htmlprocessing provides utilities to sanitize arbitary HTML for mobile ou
 
 Internally uses `lxml <http://codespeak.net/lxml/>`_ Python module.
 
-Plone layer
------------
+Plone specific packages
+------------------------
+
+gomobile.* provides Plone specific packages. The packages are split so that
+you need to install only packages and modules relevant to your site use case
+e.g. no multichannel publishing if mobile-only site is being built.
+
+gomobiletheme.* namespace is reserved for mobile site theme products.
 
 gomobile.mobile
 =============== 
 
-Core mobile functionality.
+This package provides Plone core mobile functionality.
 
 * Mobile behavior: mobile specific settings for Archetypes content 
 

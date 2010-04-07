@@ -1,0 +1,40 @@
+==================
+ Roadmap
+==================
+
+.. contents :: :local:
+
+Introduction
+------------
+
+Here are sketched some plans for the future of Go Mobile for Plone.
+
+Version 0.9
+===========
+
+* Initial Python egg release - test how egg dependency solving works with buildout
+
+Version 1.0
+===========
+
+* First non-beta Python egg release
+
+Version 1.1
+===========
+
+* Plone 4 support
+
+TODO
+====
+
+* Refactor Google Mobile Analytics to generic Python package e.g. mobile.googleanalytics
+
+* Rewrite convergence field overrides code
+
+* Convert the default Go Mobile for Plone theme XDV based
+
+* Make collective.fastview viewlet resolving code more sane
+
+* Rewrite mfabrik.behaviorutilities code based on discussion with Martin Aspeli
+
+* SMS in/out support - create generic Python mobile.sms package and gomobile.sms Plone integratino package

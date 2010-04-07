@@ -1,6 +1,16 @@
-================================
- Extending Go Mobile framework
-================================
+===========================================================
+ Extending and adapting Go Mobile framework for your needs
+===========================================================
+
+.. contents :: :local: 
+
+.. admonition:: Description
+
+        How you can override the default utilities, layers and settings
+        in Go Mobile for Plone.
+
+Introduction
+------------
 
 Basically everything can be overridden in Go Mobile per site or per application server
 basis using Zope browser layers or utility adapters. This

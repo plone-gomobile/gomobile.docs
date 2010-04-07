@@ -3,11 +3,13 @@
 =======================
 
 .. contents :: :local: 
-                
+
+.. admonition:: Description
+
+        An overview of Go Mobile for Plone architecture.                
+
 Introduction
 -------------
-
-This page gives overview of Go Mobile for Plone architecture.
 
 Go Mobile for Plone is divided to several Python packages, packed as Python eggs.
 Egg files are distributed through Python egg index services, like Python Package Index (PyPi).

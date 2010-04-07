@@ -4,10 +4,13 @@
 
 .. contents :: :local:
 
+.. admonition:: Description
+
+        Go Mobile defines different rendering modes, which defines which theme is chosen,
+        what templates are used, how template is rendered what and what content is included in the output.
+
 Introduction
 ------------
-
-Go Mobile defines various rendering modes to help the site rendering in multichannel compatible way.
 
 Usually rendering mode is decided by domain name. Ff domain name starts with m. or ends with .mobi
 it is rendered in the mobile mode. 

@@ -1,26 +1,56 @@
 =========================================================
- Redirecting visitors between web and mobile site 
+ Discriminating visitors between web and mobile site 
 =========================================================
+
+.. admonition:: Description
+
+        How Go Mobile for Plone will direct users to correct
+        version of content regardless how they arrive to 
+        web and mobile sites.
 
 .. contents :: :local:
 
 Introduction
 ------------
 
-Redirecting mobile users to mobile site is critical usability factor.
+Redirecting mobile users to mobile site is a critical user experience factor.
  
 **No matter on which kind browser user types in the address, the user
 should server the page in correct format.**
 
 Isn't it utterly annoying when you read emails on a mobile, someone has
 posted you a link, you click it and you are taken to slow, big, web page
- instead of mobile page? This does not happen with Go Mobile!
+instead of mobile page?
+ 
+Methods of browser discrimination
+================================================
+
+There are basically three different way to discriminate how web and mobile content is served.
+
+* User explicitly needs to type in the address of a mobile site or follow a link.
+  Since this is cumbersome, you cannot really expect your users to do this.
+
+* Use the same URL and always detect mobile users by the browser user agent header. 
+  This is applicable only if the site has been built ground up mobile in mind.
+
+* Web site URL with a redirect to mobile site URL. The user can opt in back 
+  to web browsing if they still need to find some content which 
+  does not have mobile presentation using a link "Go to web site". 
+  The web user can be also opt in to mobile by manually typing
+  in mobile specific address (.mobi domain name) 
+  
+Go Mobile for Plone uses the third opinion by default.
+The architecture is flexible and other options, like
+trusting the browser user agent header only, are possible.
+
+Preserving the wanted content page in redirect
+================================================
 
 Unlike most solutions, 
-Go Mobile redirector is able to match web and mobile content.
+Go Mobile redirector is able to match web and mobile content always.
 The user gets the correct content page always and is not sent to site root
 when coming to the site on a mobile phone.
-  
+
 * The content, which the user is looking for, in not lost if the user is being redirected
   
 * The user can opt-out from the mobile site and stay on the web site 

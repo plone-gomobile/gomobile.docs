@@ -11,3 +11,4 @@ Table of Content
 
    usermanual/index
    developermanual/index
+   other/index

@@ -4,14 +4,22 @@ Features
 .. admonition :: Description
 
         What multichannel publishing needs Go mobile for Plone solves.
-        
+
+.. figure::  ../developermanual/images/features.png
+   :align:   center
+
+   Go Mobile for Plone is an add-on product to add multichannel publishing
+   features to Plone content management system. 
+   
+       
 The best technology
 ===================        
-        
-Go Mobile for Plone is a multichannel publishing add-on for award-winning  
-:doc:`Plone content management system </usermanual/plone>` open source.
 
-You can leverage hundreds of existing hundreds of `Plone add-on products <http://plone.org/products>`_ 
+Plone is an add-on for award-winning, open source
+:doc:`Plone content management system </usermanual/plone>`  turning
+it to a multichannel publishing platform.
+      
+You can leverage hundreds of existing `Plone add-on products <http://plone.org/products>`_ 
 in multichannel publishing easily: blogs, forums, polls, intranets, enterprise network authentication...
 
 The best usability

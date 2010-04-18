@@ -180,16 +180,19 @@ Resizer parameters
 
 Parameters are lsited in gomobile.mobile.browser.imageprocessor.ResizerHelperView.parseParameteres()
 
-* width: "auto" or pixels. Default: "auto". 
+*width*: "auto" or pixels. Default: "auto". 
 
-* height: "auto" or pixels. Default: "auto".
+*height*: "auto" or pixels. Default: "auto".
 
-* padding_width: How many pixels reduced from the determined with. Default: 0.
+*padding_width*: How many pixels reduced from the determined with. Default: 0.
 
-* converse_aspect_ration: True of False. Default: True.
+*converse_aspect_ration*: True of False. Default: True.
 
-* URL: Absolute URL to image (http://), or  path relative to the site root
+*url*: Absolute URL to image (http://), or  path relative to the site root
 
-* image: Image object. Only useful if you subclass ResizerHelperView or use it directly. Accepts
+*image*: Image object. Only useful if you subclass ResizerHelperView or use it directly. Accepts
   any Zope image object which can be decoded by gomobile.imageinfo.
+
+*cache_key*: String. Something which identifies the image object if URL is not given. You can use context id,
+site id or similar here, combined with view id.
 

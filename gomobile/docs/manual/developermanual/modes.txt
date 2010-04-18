@@ -2,12 +2,12 @@
  Site rendering modes
 ============================
 
-.. contents :: :local:
-
 .. admonition:: Description
 
         Go Mobile defines different rendering modes, which defines which theme is chosen,
         what templates are used, how template is rendered what and what content is included in the output.
+
+.. contents :: :local:
 
 Introduction
 ------------
@@ -38,7 +38,9 @@ Modes
 Determining the mode
 --------------------
 
-Example::
+Example
+
+.. code-block:: python
 
             from zope.component import getUtility
             from gomobile.mobile.interfaces import IMobileRequestDiscriminator, MobileRequestType
@@ -46,9 +48,24 @@ Example::
             discriminator = getUtility(IMobileRequestDiscriminator)
             flags = discriminator.discriminate(self.context, self.request)
             if MobileRequestType.MOBILE in flags:
-                # Do mobile
+                # Do things necessary for mobile sie
+                pass
+            elif MobileRequestType.ADMIN in flags:
+                # The site is rendered in web mode, 
+                # but if there are special content items
+                # which are displayed to the site visitors
+                # only in mobile mode, display them also now.
+                # You don't usually need to do this.
+                pass
+            elif MobileRequestType.PREVIEW in flags:
+                # Site is rendered in IFRAME simulator
+                # You don't usually need to handle this
+                # Use MobileRequestType.MOBILE only.
+                pass
             else:
-                # Do web
+                # Do things necessary for web site
+                pass
+                
 
 
 See also

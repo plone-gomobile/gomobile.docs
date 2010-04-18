@@ -15,7 +15,7 @@
    id="svg4570"
    version="1.1"
    inkscape:version="0.47 r22583"
-   sodipodi:docname="New document 5">
+   sodipodi:docname="Icons and stuff.svg">
   <defs
      id="defs4572">
     <inkscape:perspective
@@ -32,25 +32,82 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4671"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5457"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5535"
+       inkscape:persp3d-origin="56 : 65.666667 : 1"
+       inkscape:vp_z="112 : 98.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 98.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective5573"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2855"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2883"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#f5f5f5"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="375"
-     inkscape:cy="520"
+     inkscape:zoom="0.73"
+     inkscape:cx="203.80122"
+     inkscape:cy="390.83568"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="563"
-     inkscape:window-height="484"
-     inkscape:window-x="141"
-     inkscape:window-y="24"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1402"
+     inkscape:window-height="936"
+     inkscape:window-x="203"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="58.730159,380.15873"
+       id="guide2893" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="38.095238,319.84127"
+       id="guide2895" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="326.98413,350"
+       id="guide3669" />
+  </sodipodi:namedview>
   <metadata
      id="metadata4575">
     <rdf:RDF>
@@ -69,11 +126,83 @@
      id="layer1">
     <image
        sodipodi:absref="/Applications/Inkscape.app/inkscape_pasted_image_20100417_201452.png"
-       xlink:href="/Applications/Inkscape.app/inkscape_pasted_image_20100417_201452.png"
-       width="151"
-       height="149"
-       id="image4604"
+       y="303.57648"
        x="190.21428"
-       y="303.57648" />
+       id="image4604"
+       height="98.675499"
+       width="100"
+       xlink:href="/Applications/Inkscape.app/inkscape_pasted_image_20100417_201452.png"
+       inkscape:export-filename="/Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/web.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path9598"
+       d="m 346.08702,407.67948 c -1.24317,-0.33016 -3.59011,-1.79588 -5.21541,-3.25717 -5.03389,-4.52589 -4.87072,-3.03539 -4.86687,-44.45523 0.002,-24.52617 0.21751,-36.95361 0.66829,-38.58673 0.98009,-3.5508 6.16462,-8.5595 9.39459,-9.076 l 2.47223,-0.39532 0.20486,-5.89234 c 0.24171,-6.9522 1.06706,-8.42488 4.72167,-8.42488 3.56559,0 4.21569,1.22519 4.21569,7.94492 l 0,5.74223 10.38867,0.28954 c 8.98407,0.25038 10.71992,0.45916 12.83871,1.54419 3.22127,1.6496 6.64582,5.50298 7.4435,8.37559 0.41764,1.50402 0.64013,14.83198 0.64232,38.4788 0.004,41.40063 0.16409,39.93197 -4.84879,44.43899 -1.85613,1.66881 -3.92909,2.89044 -5.63266,3.3194 -3.34177,0.84147 -29.22334,0.80476 -32.4268,-0.046 z m 36.76875,-57.81311 c 0.7636,-0.76361 1.08582,-25.33334 0.35713,-27.23228 -0.3232,-0.84227 -2.6878,-0.95262 -20.41177,-0.95262 -17.72398,0 -20.08857,0.11035 -20.41178,0.95262 -0.72869,1.89894 -0.40648,26.46867 0.35714,27.23228 1.03406,1.03406 39.07521,1.03406 40.10928,0 z"
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/phone.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <image
+       y="473.57831"
+       x="121.33487"
+       id="image5575"
+       height="144.77777"
+       width="418.43289"
+       xlink:href="file:///Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/inkscape_pasted_image_20100417_214721.png" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#86ba0d;fill-opacity:1;stroke:#000000;stroke-width:14.67766190000000037;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5579"
+       sodipodi:cx="209.54546"
+       sodipodi:cy="552.81671"
+       sodipodi:rx="87.727272"
+       sodipodi:ry="87.727272"
+       d="m 297.27273,552.81671 a 87.727272,87.727272 0 1 1 -175.45455,0 87.727272,87.727272 0 1 1 175.45455,0 z"
+       transform="matrix(0.75553332,0,0,0.75553332,-44.522792,284.69074)"
+       inkscape:export-filename="/Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/gomobile-logo-web.png"
+       inkscape:export-xdpi="27.566771"
+       inkscape:export-ydpi="27.566771" />
+    <text
+       xml:space="preserve"
+       style="font-size:70.18725586px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="231.81714"
+       y="616.40747"
+       id="text5585"
+       transform="scale(0.84148791,1.1883712)"
+       inkscape:export-filename="/Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/gomobile-logo-web.png"
+       inkscape:export-xdpi="27.566771"
+       inkscape:export-ydpi="27.566771"><tspan
+         sodipodi:role="line"
+         id="tspan5587"
+         x="231.81714"
+         y="616.40747"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Outer Limits Solid;-inkscape-font-specification:Outer Limits Solid Bold"
+         dx="0.72839844 14.281414 12.522907 13.501255 14.531363 7.2839837">MOBILE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:69.64756775px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="76.377136"
+       y="630.40729"
+       id="text2889"
+       transform="scale(0.86059971,1.1619804)"
+       inkscape:export-filename="/Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/gomobile-logo-web.png"
+       inkscape:export-xdpi="27.566771"
+       inkscape:export-ydpi="27.566771"><tspan
+         sodipodi:role="line"
+         id="tspan2891"
+         x="76.377136"
+         y="630.40729"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Outer Limits Solid;-inkscape-font-specification:Outer Limits Solid"
+         dx="0 7.3478241">GO</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3671"
+       width="23.531462"
+       height="12.085679"
+       x="84.017403"
+       y="695.41571"
+       inkscape:export-filename="/Users/moo/twinapex/twinapex/src/gomobile.docs/gomobile/docs/manual/developermanual/images/gomobile-logo-web.png"
+       inkscape:export-xdpi="27.566771"
+       inkscape:export-ydpi="27.566771" />
   </g>
 </svg>

@@ -37,7 +37,7 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Go Mobile Manual'
+project = u'Go Mobile for Plone documentation'
 copyright = u'2010, mFabrik Research Oy'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -172,7 +172,7 @@ htmlhelp_basename = 'GoMobileForPloneManual'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'GoMobileManual.tex', u'Go Mobile Manual Documentation',
+  ('index', 'GoMobileManual.tex', u'Go Mobile for Plone Documentation',
    u'mFabrik Research Oy', 'manual'),
 ]
 

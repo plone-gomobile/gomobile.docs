@@ -19,6 +19,8 @@ Supported tracking services
 
 * Google Analytics Mobile
 
+* Google Analytics Web
+
 * AdMob
 
 * Bango
@@ -32,9 +34,9 @@ How to set-up a tracker (Google)
 
 * Extract tracking id which is in format "MO-1234-12"
 
-* Now, go to :doc:`Go Mobile Settings`
+* Now, go to :doc:`Go Mobile Settings </usermanual/settings>`
 
-* As a *tracker_name*, enter *google*
+* As a *tracker_name*, enter *google-mobile*
 
 * As a *tracking_id*, enter the tracking id given by Google
 
@@ -42,7 +44,6 @@ How to set-up a tracker (Google)
 
 	Google Analytics may complain that the tracker verification failed.
 	This is normal.
-	
 	
 Real IP address of the client
 ==============================

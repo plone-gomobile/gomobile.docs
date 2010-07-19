@@ -1,0 +1,64 @@
+========================
+ Intra- and extranets
+========================
+
+.. admonition:: Description
+
+        mFabrik Web and Mobile guarantees necessary flexibility 
+        to build intra- and extranets of all kind of purposes.
+        Easy to use, push and pull guarantee the message
+        is delivered correctly.
+
+Usability is a critical factor
+driving the adoption of extranet solutions.
+mFabrik Web and Mobile is built on 
+Plone® technology which is known
+for its good usability track record. 
+
+Information overload is reduced by allowing the
+users to subscribe information they need.
+Facebook style Like-subscription can be
+brought to enterprise environment.
+
+All information can be made available on mobile too.
+Push based delivery combined with the user preferences
+of related interest 
+guarantees that correct information reaches
+correct person at the correct moment. 
+
+User access rights can be fine-tuned
+to that you have public, private and
+special group granted sections of the site.
+Permissions can be tuned down to the field level,
+so that only some groups will see the full information
+entry while others see limited, public, set.
+
+
+Intra- and extranet related features
+-------------------------------------
+
+* Comprehensive permission system allows you to create
+  different groups and roles with limited access
+  rights in the part of the system. An excellent
+  tool to limit customer access to parts of the
+  system relevant for their business only.
+    
+* Email news letters
+
+* SMS news letters
+
+* Various ways to create different information collections of 
+  which users can subscribe 
+
+* Calendar and event synchronization
+  with Outlook and iCal
+  
+* Multilingual support 
+
+Example sites
+--------------
+
+SITS international
+
+Värisuora
+

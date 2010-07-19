@@ -7,7 +7,7 @@
 .. admonition:: Description
 
         How you can override the default utilities, layers and settings
-        in Go Mobile for Plone.
+        in mFabrik Web and Mobile.
 
 Introduction
 ------------

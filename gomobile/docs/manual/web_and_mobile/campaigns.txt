@@ -1,0 +1,46 @@
+=======================
+ Campaign sites
+=======================
+
+.. admonition:: Description
+
+        mFabrik Web and Mobile can be used as a campaign
+        platform. Multichannel features make sure that the message
+        gets through, no matter what medias the user prefers.
+
+New movie launches, social efforts and brand advertisement
+campaigns are combination of different medias:
+print, TV, web, mobile and social networks. 
+mFabrik Web and Mobile is a platform combining digital media
+management so that campaign management is effective
+with the minimal amount of manual work.
+
+* Same news get through through web site news section,
+  mobile site news section, email news letter, SMS,
+  social media feed etc.
+  
+* Video files work on web, mobile and social networks. 
+  You can import your TV campaigns easily to the site.
+
+Combining print and outdoor media with mobile
+makes sure that the customer reacts when there 
+is the first impulse. For example a big 
+outdoor advertisement stops the customer who
+can continue to order a sample using SMS
+send message instructions on the ad.
+  
+Features
+----------
+
+* Email news letter
+
+* SMS news letter
+
+* RSS and ATOM feeds
+
+* Feeds to social media
+
+* Integration to print and outdoor advertising with mobile links
+  and 2D barcodes
+  
+* Speaks all the languages of the world, right-to-left written languages included

@@ -1,0 +1,49 @@
+=========================
+ Media and entertainment
+=========================
+
+.. admonition:: Description
+
+        mFabrik Web and Mobile combines
+        text, image, audio and video content 
+        management to a single integrated process.
+        This enables efficient management even big 
+        media sites.
+
+With integrated video and audio encoding 
+servers, mFabrik Web and Mobile can 
+input any video format and create
+different transcodes it for various 
+devices: web site Flash and HTML5,
+mobile stream and download. The video
+files can be syncrhonized with your brand's 
+YouTube channel or other video service.
+
+Live streaming allows
+instant sharing of your events in web and mobile.
+Live events can be combined with real-time chat or Twitter feed. 
+Your users can share their own broadcasts
+through webcams.
+
+Features
+----------
+
+* Transcoding of video files to different medias: Flash video, h264, 3GP
+
+* Streaming and download: RTSP and HTTP progressive download
+
+* Device support: Internet browsers since IE6, Apple devices,
+  smart phones, feature phones
+
+* Real-time chat (Javascript / Flash) and Twitter
+
+Sites
+------
+
+* YLE movie
+
+* Oulu City Guide
+
+* Yes Man movie site 
+
+

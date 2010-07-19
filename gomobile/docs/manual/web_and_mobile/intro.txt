@@ -1,0 +1,57 @@
+==========================
+ About the product
+==========================
+
+.. admonition:: Description
+
+        mFabrik Web and Mobile is a publishing platform
+        allowing you to distribute personalized information 
+        through various channels. It's solves
+        the problem of managing different medias and 
+        information overload of the contemporary world.
+
+Vision
+-------
+
+The future of digital communications is 
+about more personalized interaction where  
+the user is not chained to the desktop. 
+Instead of seeking the information, 
+the information where are interested arrives
+to us. 
+
+Use cases
+-----------
+
+mFabrik Web and Mobile streamlines the process
+of digital information delivery. 
+Create information once and then 
+use various push and pull channels to 
+distribute and interact with it.
+
+More information sensitive and more
+internet aware your business, the better mFabrik Web and Mobile 
+solutions suits for it. Some vertical segments
+cover business applications (intra- and extranets),
+travel industry solutions, campaigns and 
+media sites.
+
+Services and support
+---------------------
+
+mFabrik Web and Mobile is a complex product.
+mFabrik wants to help you to get most of it
+by providing different services options.
+Whether you are a developer only needs to ensure 
+the code works for you or a organization needing
+a turn key solution, we want make sure your 
+business runs smoothly.
+
+
+High quality open source product
+--------------------------------
+
+mFabrik Web and Mobile is built on the open source 
+technologies with the promise of quality of transparency. 
+The customer is never trapped in a situation where where the further
+development or switching the vendor where not possible.

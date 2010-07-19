@@ -10,12 +10,12 @@ using Go Mobile mobile CMS product.
    :maxdepth: 2
    
    features
+   faq
    installation
    plone
    license
    optimal_experience
    convergence
-   navigation
    options
    preview
    redirector
@@ -23,7 +23,7 @@ using Go Mobile mobile CMS product.
    analytics
    seo
    sitemap
-   settings
+   setting
    sniffing
    themes
    varying

@@ -1,5 +1,5 @@
 ================================
- Installing Go Mobile for Plone
+ Installing mFabrik Web and Mobile
 ================================
 
 .. contents :: :local:
@@ -20,7 +20,7 @@ Supported operating systems are all operating systems which run Plone
 Prerequisitements
 -----------------
 
-The following software stack must be installed to run Go Mobile for Plone add-on. 
+The following software stack must be installed to run mFabrik Web and Mobile add-on. 
 All these are covered by the installation instructions here.
 
 * Plone 3 / Python 2.4 
@@ -221,7 +221,7 @@ Add Go Mobile snippets as described in the following::
      # with commit access or not
      extends =
         ...
-        # Commit access (you need to have approved Go Mobile for Plone commit rights)
+        # Commit access (you need to have approved mFabrik Web and Mobile commit rights)
         # and Plone collective commit rights
         # http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.commit-access.cfg
 

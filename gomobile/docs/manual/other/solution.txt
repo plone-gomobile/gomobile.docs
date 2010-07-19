@@ -36,34 +36,6 @@ Includes
   
 * Travel costs not included
 
-Mobile Plone starter project
-=============================
-
-Audience: Existing Plone integrators who wish to enter the mobile publishing
-and convert their existing sites to mobile.
-
-One or two mFabrik specialists will come to meet your
-integrator team at your site. With three days sprint
-a mobile site project is kicked off and get to a
-state where local integration team can take over the
-future maintenance of the project. 
-
-* Price: 4900 € / project
-
-* Three on-site consultancy days with the local integrator team
-
-* Day 1: Discussing abou the client organization, its need.
-  Discussing about technical mobile opportunities.
-  Go mobile for Plone developer and integrator training.
-  
-* Day 2: Preparing mobile customization for one site
-
-* Day 3: Preparing mobile customization for one site  
-
-* Professional support service for six months included
-
-* Travel costs included within EU area
-  
 More days can be included if needed.
   
 Python and Plone development
@@ -117,6 +89,6 @@ The offering includes
   publishing, mobile and ecommerce, video streaming and live broadcasts,
   embedded Linux, cross-platform mobile applications 
 
-* All IPR assets of mFabrik Research Oy and Go Mobile for Plone
+* All IPR assets of mFabrik Research Oy and mFabrik Web and Mobile
 
 * Invitation to mFabrik Research Holiday Season Party

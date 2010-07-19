@@ -1,7 +1,7 @@
 Go Mobile documentation
 ==================================
 
-This is documentation for Go Mobile for Plone mobile CMS product.
+This is documentation for mFabrik Web and Mobile mobile CMS product.
 
 Table of Content
 ================

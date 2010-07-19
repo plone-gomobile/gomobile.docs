@@ -1,0 +1,57 @@
+=======================
+ Architecture
+=======================
+
+.. contents :: :local: 
+
+.. admonition:: Description
+
+        An overview of mFabrik Web and Mobile architecture.                
+
+Introduction
+-------------
+
+mFabrik Web and Mobile consist of several integrated products and services.
+The architecture is flexible, allowing the switching of the parts in the case
+there exist requirements to integrate with different systems.  
+
+Integrated products
+====================
+
+mFabrik Web and Mobile content management is built on the top of Plone® content management system.
+
+Plone is enhanced with several add-on modules which extends it basic web functionality
+with 
+
+* mobile (Go Mobile for Plone family)
+
+* SMS (mfabrik.sms add-ons)
+
+* Newsletter (Singing & Dancing) 
+
+* Video and audio (mfabrik.video add-ons, Plumi video framework for Plone)
+
+Services for special communication needs
+------------------------------------------
+
+Multichannel communications require integration with mobile carriers
+and other parties. mFabrik makes this simple for the system integrator
+by providing standard service integration points for these needs.
+
+SMS
+====
+
+SMS messaging services are provided by Apex Messaging solution which is 
+a standalone service integrating to different carrier SMS gateways. 
+Apex Messaging provides tools to monitor message cost and delivery 
+rates. 
+
+Video and audio
+=================
+
+Video encoding requires specialized servers and processing power.
+Video and audio management and distribution is handled by Apex Media service which
+is provided as software-as-a-service from mFabrik server farm. You 
+don't need to build your own transcoding infrastructure.
+
+

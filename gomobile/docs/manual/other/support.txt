@@ -2,7 +2,7 @@
  Support and pricing
 ============================
 
-Go Mobile for Plone is an open source product, free as in speech and
+mFabrik Web and Mobile is an open source product, free as in speech and
 free as in beer. This is a transparent quality assurance and follows 
 the principles and philosophy of its developers who believe
 that all the best software is open source.

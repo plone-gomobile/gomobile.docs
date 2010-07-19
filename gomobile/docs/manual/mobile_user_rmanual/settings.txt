@@ -1,5 +1,5 @@
 ==========================================
- Go Mobile for Plone site settings
+ mFabrik Web and Mobile site settings
 ==========================================
 
 All Go Mobile settings can be configured through web interface.

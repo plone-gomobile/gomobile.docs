@@ -1,0 +1,66 @@
+==========================
+ Travel
+==========================
+
+.. admonition:: Description
+
+        mFabrik Web and Mobile is a robust platform to build 
+        your travel business digital service channel. It offers
+        facilities to serve the traveler during all times
+        of the trip.
+
+A Travel customer has life-cycle consisting of discrete steps 
+where in every step the customer needs different kind of care. In this cycle,
+the customer should be guaranteed to get service and never be forgotten. 
+
+* Before the travel the traveler searchs information about the destination in web.
+  The visual appealance of the web site and search engine visibility are important
+  factors to attract new customers.
+
+* During the travel the traveler needs to get up-to-date information related to their route
+  and actitives. SMS messages and mobile web are the best tool to deliver the 
+  time and place critical information. Offline mobile applications can replace 
+  the traditional travel guides with information for places where 
+  network is not available (no roaming fees). 
+
+* After the travel you can approach the traveler to 
+  ask him or her to share travel experiences. Customer
+  satisfaction and quality survey tools over email and SMS can be used to
+  get feedback to improve your travel business customer service. 
+
+* The life cycle repeats when the next season begins and you 
+  want to invite the traveler, who enjoyed the trip, to come
+  to visit you again. Email letter highlights the 
+  new attractions of upcoming season and can offer
+  special prices for early bird booking. 
+
+mFabrik Web and Mobile platform has been succesfully
+used to create full-service digital travel agency solutions
+with a hard proof of increased sales.
+
+Travel related features
+-------------------------
+
+* Quick-ordering forms on every page or wanted sections to maximize sales potential
+
+* Publishing accommondation and service product details
+  from the reservation system raising their
+  search engine awarness
+
+* Map support. Waypoint download and GPS navigation 
+  support on mobile devices.
+
+* Comprehensive event calendar system
+  
+* Third party publishing permission system allows your partners
+  to place their own product and event information on your 
+  site without too much of manual work
+  
+Example sites
+-------------
+
+* Saariselän aluekeskus
+
+* Mondo magazine
+
+* Oulu city guide

@@ -1,5 +1,5 @@
 ====================================================
- Optimal user experience with Go Mobile for Plone
+ Optimal user experience with mFabrik Web and Mobile
 ====================================================
 
 Go Mobile tries hard to achieve the most optimal mobile browsing experience,

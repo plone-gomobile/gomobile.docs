@@ -6,12 +6,31 @@
 
 .. admonition:: Description
 
-        An overview of Go Mobile for Plone architecture.                
+        An overview of mFabrik Web and Mobile architecture.                
 
 Introduction
 -------------
 
-Go Mobile for Plone is divided to several Python packages, packed as Python eggs.
+Integrated products
+====================
+
+mFabrik Web and Mobile consist of several integrated products and services.
+The architecture is flexible, allowing the switching of the parts in the case
+there exist requirements to integrate with different systems.  
+
+mFabrik Web and Mobile content management is built on the top of Plone® content management system.
+
+Plone is enhanced with several add-on modules which extends it basic web functionality
+with mobile, SMS, email and video features. 
+
+Video and audio management and distribution is handled by Apex Media service which
+is provided as software-as-a-service from mFabrik server farm.
+
+SMS messaging services are provided by Apex Messaging solution which is 
+a standalone service integrating to different carrier SMS gateways.  
+
+
+is divided to several Python packages, packed as Python eggs.
 Egg files are distributed through Python egg index services, like Python Package Index (PyPi).
 By dividing the product to small components we achieve
 

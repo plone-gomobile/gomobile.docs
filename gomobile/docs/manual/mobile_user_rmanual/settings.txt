@@ -61,6 +61,14 @@ Example value::
         www
 
 
+serve_mobile_via_ip
+-------------------
+
+If the site is reached by using numerical IP address serve it in mobile mode.
+
+This is useful if you are testing your site for mobile devices over LAN or WLAN
+using local IP address format, like ``192.168.200.12``. All access
+by IP address is assumed to be mobile traffic is this switch is on. 
 
 mobile_skin
 -----------

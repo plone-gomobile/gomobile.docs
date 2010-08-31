@@ -28,6 +28,33 @@ Supported tracking services
 How to set-up a tracker (Google)
 ----------------------------------
 
+.. warning::
+
+        In pre-1.0 versions, Go Mobile supports only Javascript based Google Analytics.
+        
+
+Javascript based tracking
+==========================
+
+This is the most pain-free tracking method for mobile clients supported
+Javascript (not suitable for low end phones).
+
+* Visit Google Analytics site and create a new site
+
+* When Google Analytics offers you a tracking code, choose Advanced -> Mobile
+
+* Extract tracking id which is in format "UA-8819100-123"
+
+* Now, go to :doc:`Go Mobile Settings </usermanual/settings>`
+
+* As a *tracker_name*, enter *google-web*
+
+* As a *tracking_id*, enter the tracking id given by Google
+
+            
+Image based tracking 
+======================        
+
 * Visit Google Analytics site and create a new site
 
 * When Google Analytics offers you a tracking code, choose Advanced -> Mobile
@@ -45,20 +72,6 @@ How to set-up a tracker (Google)
 	Google Analytics may complain that the tracker verification failed.
 	This is normal.
 	
-Real IP address of the client
-==============================
-
-If you are using Apache's mod_proxy or similar virtual hosting solution, 
-make sure that the real IP address of the client reaches the tracking code.
-
-You need to make sure that your front-end server passes the IP information 
-forward. For Apache, this setting is::
-
-        ProxyVia on
-
-For more information see
-
-* http://wiki.zope.org/zope2/ZopeAndApache#setting-remote-addr-to-the-client-ip 
  	
 
 Google Analytics mobile background
@@ -75,3 +88,17 @@ When the image URL is formed, HTTP request headers are read
 and forwarded to Google Analytics as HTTP GET query parameters.
 This way refering page etc. are propeply tracked.
 
+Real IP address of the client
+-------------------------------
+
+If you are using Apache's mod_proxy or similar virtual hosting solution, 
+make sure that the real IP address of the client reaches the tracking code.
+
+You need to make sure that your front-end server passes the IP information 
+forward. For Apache, this setting is::
+
+        ProxyVia on
+
+For more information see
+
+* http://wiki.zope.org/zope2/ZopeAndApache#setting-remote-addr-to-the-client-ip 

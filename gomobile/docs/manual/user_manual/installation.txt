@@ -206,14 +206,25 @@ This is needed if you wish to develop Go Mobile code base.
 Modify buildout to include Go Mobile trunk version sources
 ==========================================================
 
+The following buildout extends are available for you:
+
+* Plone 3 anonymous
+
+* Plone 3 commiter
+
+* Plone 4 anonymous
+
+* Plone 4 commiter
+
+See `gomobile.buildout project for available URLs and files <http://code.google.com/p/plonegomobile/source/browse/trunk/gomobile/gomobile.buildout>`_.
+
 Add Go Mobile snippets as described in the following::
 
     [buildout]
 
      parts =
         ...
-        
-     parts += ${gomobile.config:parts}
+        ${gomobile.config:parts}
      
      # Note: Uncomment the the correct line below whether you want to checkout the repositories
      # with commit access or not
@@ -232,14 +243,12 @@ Add Go Mobile snippets as described in the following::
      eggs =
         Plone
         ...
-     
-     eggs += ${gomobile.config:eggs}
+        ${gomobile.config:eggs}
 
     [instance]
     zcml =
         ...
-        
-    zcml += ${gomobile.config:zcml}
+        ${gomobile.config:zcml}
 
  
         

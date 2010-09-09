@@ -27,9 +27,9 @@ The difference between previewed pages and mobile pages from actual *m.yoursite.
 is that preview pages contain a cross-site Javascript snippet to bootstrap the simulator
 IFRAME.
 
-Since IFRAME loads from subdomain, your authentication mechanism must s
+Since IFRAME loads from subdomain, your authentication mechanism must 
 support subdomains. gomobile.mobile product modifies Plone login mechanism so that your 
-cookie is effective for *.yoursite.com hostnames.
+cookie is effective for \*.yoursite.com hostnames.
 
 .. note ::
 

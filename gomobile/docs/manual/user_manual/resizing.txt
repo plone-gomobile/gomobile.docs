@@ -15,7 +15,7 @@ Resizing
 Since mobile screen come in various sizes and shapes, this is necessary for 
 optimal page viewing experience.
 
-Automatic resizing is based on browser :doc:'user agent detection </usermanual/sniffing>'_.
+Automatic resizing is based on browser :doc:'user agent detection </user_manual/sniffing>'_.
  
 Defloating
 ==========
@@ -53,7 +53,7 @@ By default, all page body text is run through the resizer
   In this case, Python urllib is used to retrieve the external image to your own server.
 
 You can also explicitly use resizer on specific site elements, like logo,
-in your theme code. For more information, see :doc:`Transformations in Developer Manual </developermanual/transformations>`. 
+in your theme code. For more information, see :doc:`Transformations in Developer Manual </developer_manual/transformations>`. 
 
 Resizer cache
 -------------
@@ -76,9 +76,9 @@ Clearing cache
 Currently cache must be cleaned manually using a cron job if it grows too much.
 There is no cache garbage collection.
 
-You can clear the cache if you know your *image_resizer_secret* in :doc:`settings </usermanual/settings>`.
+You can clear the cache if you know your *image_resizer_secret* in :doc:`settings </user_manual/settings>`.
 Navigate to URL::
 
-http://yourhost:8080/Plone/@@mobile_image_processor_clear_cache?secret=*your_image_resizer_secret*
+        http://yourhost:8080/Plone/@@mobile_image_processor_clear_cache?secret=*your_image_resizer_secret*
         
 This triggers gomobile.mobile.imageprocessor.ClearCacheView code.

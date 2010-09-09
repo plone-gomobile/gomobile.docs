@@ -19,7 +19,7 @@ Supported tracking services
 
 * Google Analytics Mobile
 
-* Google Analytics Web
+* Google Analytics Web (the same Javascript used as used on normal web pages)
 
 * AdMob
 
@@ -45,7 +45,7 @@ Javascript (not suitable for low end phones).
 
 * Extract tracking id which is in format "UA-8819100-123"
 
-* Now, go to :doc:`Go Mobile Settings </usermanual/settings>`
+* Now, go to :doc:`Go Mobile Settings </user_manual/settings>`
 
 * As a *tracker_name*, enter *google-web*
 
@@ -61,7 +61,7 @@ Image based tracking
 
 * Extract tracking id which is in format "MO-1234-12"
 
-* Now, go to :doc:`Go Mobile Settings </usermanual/settings>`
+* Now, go to :doc:`Go Mobile Settings </user_manual/settings>`
 
 * As a *tracker_name*, enter *google-mobile*
 

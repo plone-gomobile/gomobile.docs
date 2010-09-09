@@ -99,6 +99,16 @@ Any string is accepted.
 Example value::
 
         secretfoobar123
+        
+image_resize_cache_path
+------------------------
+      
+File-system path where we store mobile resized copies of images -->
+  
+Default value::  
+        
+        /tmp/gomobile_image_cache
+        
 
 default_canvas_width
 --------------------
@@ -154,25 +164,16 @@ tracking_id
 Tracker id used.
 
 
+tracker_debug
+--------------
 
-  <!-- Should mobile tracker print out debug information.
+
+Mobile analytics tracker logs/prints out debug information.
   
-     Useful for tracing tracker problems.
+Useful for tracing tracker problems.
      
-     * Set special HTTP response header
+* Sets special HTTP response header
      
-     * Print console output
+* Prints console output
       
-     -->
-  <property name="tracker_debug" type="boolean" purge="False">False</property>
-
-  <!-- Copyright banner HTML code -->
-  <property name="footer_text" type="string" purge="False">Theme Copyright 2009 Twinapex Research. Change this message in portal_properties / mobile_properties</property>
-
-  <!-- List of view ids when not to sho folder listing viewlet -->
-  <property name="no_folder_listing_view_ids" type="lines" purge="False">
-    <element value="folder_listing"/>
-  </property>
-
-  <!-- Where we store mobile resized copies of images -->
-  <property name="image_resize_cache_path" type="string" purge="False">/tmp/gomobile_image_cache</property>
+     

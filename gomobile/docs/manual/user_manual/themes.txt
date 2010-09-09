@@ -7,7 +7,7 @@ on every kind of mobile phone.
 
 Go Mobile themes support
 
-* Optimizing images by the :doc:`browser screen size </usermanual/sniffing>`
+* Optimizing images by the :doc:`browser screen size </user_manual/sniffing>`
 
 * Varying CSS for low end and smartphones
 

@@ -9,6 +9,5 @@ Table of Content
 .. toctree::
    :maxdepth: 2
 
-   gomobile_user_manual/index
+   user_manual/index
    developer_manual/index
-   other/index

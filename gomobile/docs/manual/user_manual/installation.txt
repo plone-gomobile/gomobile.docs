@@ -1,6 +1,6 @@
-================================
- Installing mFabrik Web and Mobile
-================================
+====================================
+ Installing Go Mobile for Plone
+====================================
 
 .. contents :: :local:
 
@@ -206,8 +206,6 @@ This is needed if you wish to develop Go Mobile code base.
 Modify buildout to include Go Mobile trunk version sources
 ==========================================================
 
-* Add the following to your buildout.cfg::
-
 Add Go Mobile snippets as described in the following::
 
     [buildout]
@@ -335,16 +333,14 @@ run automatic Go Mobile test suite which includes unit and functional tests.
 This will guarantee that your operating system libraries and Python module
 set is compatible with Go Mobile.
 
-To run test suite::
+To run test suite (using zc.recipe.testrunner)::
 
-	bin/instance test -m gomobile* -m mobile*
+	bin/test -m gomobile* -m mobile*
  
 After test suite completes, it should report zero failures::
 
   Total: 119 tests, 0 failures, 0 errors
 
-You also need to run tests for mobile.* framework packages::
 
  
-                
-
+             

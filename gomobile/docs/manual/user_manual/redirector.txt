@@ -59,7 +59,7 @@ when coming to the site on a mobile phone.
 Redirecting logic
 -----------------
 
-.. figure::  ../developermanual/images/redirecting.png
+.. figure::  ../developer_manual/images/redirecting.png
    :align:   center
 
    Redirecting logic
@@ -79,7 +79,7 @@ Web and mobile domain name mappings
 -----------------------------------
 
 By default, Go Mobile will prefixes your web site name with m. domain name prefix
-and assumes this is your mobile site. This can be changed in :doc:`settings </usermanual/settings>.
+and assumes this is your mobile site. This can be changed in :doc:`settings </user_manual/settings>`.
 WWW prefix is removed from the domain before redirecting.
 
 E.g. Visitor coming to *yoursite.com* with a mobile browser is redirected to *m.yoursite.com*,

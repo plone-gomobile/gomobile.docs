@@ -9,10 +9,10 @@ This all is achieved
 
 * With many years of experience in mobile development
 
-* :doc:`Vary site features </usermanual/varying>` by `mobile browser detection </usernamual/sniffing>`
+* :doc:`Vary site features </user_manual/varying>` by `mobile browser detection </usernamual/sniffing>`
   to give user special goodies like clickable phone numbers and navigation links.
 
-* Using :doc:`mobile image optimization techniques </usermanual/resizing>`
+* Using :doc:`mobile image optimization techniques </user_manual/resizing>`
 
 * Both touch and keypad based navigation are supported. For example, padding is added to make links 
   easily touchable.

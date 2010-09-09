@@ -1,4 +1,4 @@
-
+-----------------------------------------------------
 Features
 -----------------------------------------------------
 
@@ -18,12 +18,9 @@ your mobile publishing and content management needs.
   
 * High quality :doc:`extensible </developer/plugins>` code base with test
   suite over hundred tests and coverage 
-=======
-        What multichannel publishing needs Go mobile for Plone solves.
 
 .. figure::  ../developermanual/images/features.png
    :align:   center
->>>>>>> .merge-right.r357
 
    Go Mobile for Plone is an add-on product to add multichannel publishing
    features to Plone content management system. 

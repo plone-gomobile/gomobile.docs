@@ -198,10 +198,37 @@ Use *Site setup* control panel in Plone and its *Add-on products* tool to instal
 
 * *Go Mobile Convergence* is needed if you wish to publish **both** web and mobile content on the same site
 
+Plone 3 compatibility
+++++++++++++++++++++++
+
+If you are running Go Mobile for Plone on Plone 3 site, an additional 
+installation step is needed. This step will use Plone 3 compatible
+``main_template.pt`` instead of default Plone 4 one.
+
+* Go to Zope Management Interface, your site root
+
+* Choose portal_skins
+
+* Choose *Properties tab* tab
+
+* On *Go Mobile Default Theme" add the following line after ``custom``::
+        
+        gomobiletheme_plone
+
+* Save
+
+Repeat the step for any custom mobile theme you might be using on Plone 3 site.
+
 Trunk version installation
 --------------------------
 
-This is needed if you wish to develop Go Mobile code base.
+This is needed if you wish to develop Go Mobile for Plone code base.
+
+.. note ::
+
+        Subversion 1.6 or later is required, as otherwise
+        Mr. Developer recipes "ignore certificate errors"
+        does not work. 
 
 Modify buildout to include Go Mobile trunk version sources
 ==========================================================
@@ -265,29 +292,6 @@ setting of HTTP or priviledged HTTPS checkout protocol.
         is used as a base to have a compatible component configuration
         for the product.
         
-Making code repository certificates available in Subversion
-===========================================================
-
-.. note ::
-        
-        This is only needed if you are doing the trunk
-        checkout with commit access.
-
-Subversion *svn* command is reluctant do deal with repositories
-for which the user has not manually accepted HTTPS certificate.
-
-This process cannot be automatized currently.
-
-SVN stores the accepted certificates in the user ~/.subversion
-folder. But to get the certificates there in the first place you need 
-to checkout some of the projects manually.
-
-Please do the following in your buildout folder. Note that using *http* or *https* 
-depends whether you checkout projects with commit access or not::
-
-    svn co https://svn.plone.org/svn/collective/collective.fastview/trunk src/collective.fastview
-    svn co https://mobilesniffer.googlecode.com/svn/trunk/mobile.sniffer src/mobile.sniffer
-    svn co https://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.mobile src/gomobile.mobile
     
 Running buildout with Mr. Developer
 ===================================

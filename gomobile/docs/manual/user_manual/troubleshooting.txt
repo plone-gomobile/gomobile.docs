@@ -23,7 +23,37 @@ from a computer to another. It must be recompiled to be compatible with new OS/P
 
 * Rerun buildout
 
+plone_view.mark_view(view) exception
+-------------------------------------
 
+Traceback::
+
+        # Line 3, Column 0
+        Expression: <PythonExpr plone_view.mark_view(view)>
+        Names:
+        
+        {'container': <CampaignPage at /mfabrik/front-page>,
+         'context': <CampaignPage at /mfabrik/front-page>,
+         'default': <object object at 0x10030a200>,
+         'here': <CampaignPage at /mfabrik/front-page>,
+         'loop': {},
+         'nothing': None,
+         'options': {'args': (<Products.Five.metaclass.SimpleViewClass from /Users/moo/twinapex/twinapex/src/mfabrik.app/mfabrik/app/browser/campaignmobileview.pt object at 0x10e2fa9d0>,)},
+         'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x11117d488>,
+         'request': <HTTPRequest, URL=http://m.localhost:8080/mfabrik/front-page/campaignpageview>,
+         'root': <Application at >,
+         'template': <ImplicitAcquirerWrapper object at 0x111185bd0>,
+         'traverse_subpath': [],
+         'user': <SpecialUser 'Anonymous User'>,
+         'view': <Products.Five.metaclass.SimpleViewClass from /Users/moo/twinapex/twinapex/src/mfabrik.app/mfabrik/app/browser/campaignmobileview.pt object at 0x10e2fa9d0>,
+         'views': <zope.app.pagetemplate.viewpagetemplatefile.ViewMapper object at 0x111185c90>}
+        
+        # Module Products.PageTemplates.ZRPythonExpr, line 49, in __call__
+        __traceback_info__: plone_view.mark_view(view)
+        # Module PythonExpr, line 1, in <expression>
+
+You are trying to use Plone 4 main_template.pt on Plone 3 site.
+Please see :doc:`installation instructions </user_manual/installation>` how to fix this.
        
 
 

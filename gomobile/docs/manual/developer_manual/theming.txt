@@ -69,7 +69,9 @@ Create a viewlets.py code with the followind content::
         # Use templates directory to search for templates.
         grok.templatedir("templates")
         
-        # Viewlets are active only when gomobiletheme.basic theme layer is activated
+        # Viewlets are active only when the theme layer is activated
+        # 1) You must run add-on installer for your add-on product quick installer
+        # 2) You must access the site through mobile URL
         grok.layer(IThemeLayer)
         
         # Use this viewlet manager for mobile viewlets

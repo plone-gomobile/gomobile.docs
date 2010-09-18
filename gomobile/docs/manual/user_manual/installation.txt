@@ -132,8 +132,12 @@ On Windows, they are included in the unified installer.
 Modifying your hosts file
 --------------------------
 
-Modifying hosts file is the easiest way to fake HTTP request "to act like mobile" from your web browser
-to your local instance.
+`Hosts file <http://en.wikipedia.org/wiki/Hosts_(file)>`_ 
+is your operating system text file which 
+allows you to manually add DNS names on different
+IP addresses. For testing and developing Go Mobile for Plone you 
+need to assign another name for your local computer, also
+known as ``localhost`` or by IP address ``127.0.0.1``. 
 
 After modifications, the following URL will render in web mode (like before modification)::
 
@@ -197,27 +201,6 @@ Use *Site setup* control panel in Plone and its *Add-on products* tool to instal
 * *Go Mobile Default Theme* or any other mobile theme is needed always
 
 * *Go Mobile Convergence* is needed if you wish to publish **both** web and mobile content on the same site
-
-Plone 3 compatibility
-++++++++++++++++++++++
-
-If you are running Go Mobile for Plone on Plone 3 site, an additional 
-installation step is needed. This step will use Plone 3 compatible
-``main_template.pt`` instead of default Plone 4 one.
-
-* Go to Zope Management Interface, your site root
-
-* Choose portal_skins
-
-* Choose *Properties tab* tab
-
-* On *Go Mobile Default Theme" add the following line after ``custom``::
-        
-        gomobiletheme_plone
-
-* Save
-
-Repeat the step for any custom mobile theme you might be using on Plone 3 site.
 
 Trunk version installation
 --------------------------

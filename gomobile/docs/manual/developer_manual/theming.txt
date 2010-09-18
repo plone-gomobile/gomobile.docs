@@ -39,6 +39,14 @@ See plonecommunity.app example how to do this.
 Below are some notes for theming,  used by gomobiletheme.basic 
 You may or may not opt-in to use these practices.
 
+Plone 3 compatibility
+======================
+
+``gomobiletheme.basic`` has some special arrangemenets
+to maintain backwards compatibility with Plone 3.
+Please see ``gomobiltheme.basic`` ``README.txt``
+file for more information.
+
 five.grok used
 ==============
 

@@ -228,7 +228,7 @@ The following buildout extends are available for you:
 
 See `gomobile.buildout project for available URLs and files <http://code.google.com/p/plonegomobile/source/browse/trunk/gomobile/gomobile.buildout>`_.
 
-Add Go Mobile snippets as described in the following::
+Add Go Mobile for Plone snippets to ``buildout.cfg`` as described below::
 
     [buildout]
 
@@ -236,16 +236,10 @@ Add Go Mobile snippets as described in the following::
         ...
         ${gomobile.config:parts}
      
-     # Note: Uncomment the the correct line below whether you want to checkout the repositories
-     # with commit access or not
+     
+     # Need to refer to buidout.cfg extension which lives on Google Code servers.
      extends =
-        ...
-        # Commit access (you need to have approved mFabrik Web and Mobile commit rights)
-        # and Plone collective commit rights
-        # http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.commit-access.cfg
-
-        # No commit access - you just want to play with the source and 
-        # submit changes as patches
+        http://dist.plone.org/release/4.0/versions.cfg
         http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.anonymous.cfg
         
      extensions = mr.developer
@@ -258,22 +252,35 @@ Add Go Mobile snippets as described in the following::
     [instance]
     zcml =
         ...
-        ${gomobile.config:zcml}
-
- 
+        ${gomobile.config:zcml} 
         
-*gomobile.trunk.cfg* is an buildout extension file defining where to get trunk source code
-using `Mr. Developer <http://pypi.python.org/pypi/mr.developer>`_ buildout extension.
 
-*gomobile.trunk.commit-access.cfg* and *gomobile.trunk.anonymous.cfg* are 
+Different trunk version buildout options are 
+
+* http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.plone-4.trunk.cfg
+
+* http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.plone-4.trunk.commit-access.cfg
+
+* (Plone 3) http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.commit-access.cfg
+
+* (Plone 3) http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.anomymous.cfg
+
+You can find available versions `here <http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout>`_.
+        
+*gomobile.trunk.cfg* is an buildout extension file defining trunk package versions
+using `Mr. Developer <http://pypi.python.org/pypi/mr.developer>`_ buildout extension.
+You do not want to include this file directly, as depending on the commit access and Plone
+version you need to get one of the options above.
+
+Files ending with *commit-access.cfg* and *anonymous.cfg* are 
 alternative config files extending *gomobile.trunk.cfg* with the 
 setting of HTTP or priviledged HTTPS checkout protocol.
        
 .. note ::
 
         Dexterity (new Plone system) component version configuration
-        is used as a base to have a compatible component configuration
-        for the product.
+        is used as a base to have a good known set of version
+        for Go Mobile for Plone.
         
     
 Running buildout with Mr. Developer

@@ -1,13 +1,15 @@
 ================================================
- Automatic image resizing for mobile displays
+ Mobile image optimizations
 ================================================
 
-.. contents::
+.. contents:: :local:
 
 Introduction
 ------------
 
-Go Mobile provides facilities to automatically optimize images for mobile screens.
+Go Mobile for Plone provides facilities to automatically optimize images for mobile screens.
+This includes shrinking chosen images, modifying HTML content to handle floating images better 
+and caching the resulting optimized images.
 
 Resizing
 ========

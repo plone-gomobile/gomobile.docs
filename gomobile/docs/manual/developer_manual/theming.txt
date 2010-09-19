@@ -28,16 +28,26 @@ Best practices
 * Read :doc:`Transformations </developer_manual/transformations>` for info about different CSS files
   and their purposes.
   
+
 gomobiletheme.basic
 -------------------
 
-A basic Plone-blueish theme is supplied with Go Mobile (gomobiletheme.basic package).
+A basic Plone 4 Sunburst like theme is supplied with Go Mobile for Plone (gomobiletheme.basic package).
 It is recommended that you recycle theme viewlets from this package.
 
 See plonecommunity.app example how to do this.
 
 Below are some notes for theming,  used by gomobiletheme.basic 
 You may or may not opt-in to use these practices.
+
+* `gomobiletheme.basic README <http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobiletheme.basic/README.txt>`_ 
+
+Customization examples
+-----------------------
+
+One maintained public example exists
+
+* plonecommunity.mobi `site <http://plonecommunity.mobi>`_ and the `source code <http://plonegomobile.googlecode.com/svn/trunk/gomobile/plonecommunity.app>`_
 
 Plone 3 compatibility
 ======================

@@ -12,6 +12,34 @@ special consideration to work optimally.
 
 Here are explained some options and rules which make navigation smooth on Go Mobile.
 
+
+Mobile Site Actions
+--------------------
+
+The mobile site can have site actions in the right side of the header, that will be some
+actions that are used often and they are represented with an icon.
+
+For site actions to show up, they need to be specified in ZMI:
+
+* Navigate to portal_actions
+
+* Click "Add CMF Action Category"
+
+* Enter "mobile_site_actions" into the ID field and click Add
+
+* Select the newly created category and add CMF Action to it
+
+* It is not enough only to specify the ID, but other fields also need some values, so
+select the newly created action
+
+* Title, URL and Icon fields are required. For adding a search button, we'll use:
+Title: "Search",
+URL: "string:${portal_url}/search",
+Icon: "string:${portal_url}/++resource++gomobiletheme.basic/actions/search.png"
+
+You can customize this viewlet by overriding *TopActions* viewlet in gomobiletheme.basic.
+
+
 Mobile folder listing
 ----------------------
 
@@ -37,23 +65,40 @@ You can opt-out pages from automatic folder listing using
         make it visible using Plone's @@manage-viewlets
         functionality to access the page.
 
+
+Main navigation
+----------------
+
+The navigation is based on the mobile_navigation action category, and it can be set
+only through ZMI:
+
+* Navigate to portal_actions
+
+* Click "Add CMF Action Category"
+
+* Enter "mobile_navigation" into the ID field and click Add
+
+* Select the newly created category and add CMF Action to it
+
+* It is not enough only to specify the ID, but other fields also need some values, so
+select the newly created action
+
+* Title and URL fields are required (the URL field is an expression so you can use
+for example "string:${portal_url}/" here for the home page)
+
+You can customize this viewlet by overriding *Navigation* viewlet in gomobiletheme.basic.
+
+
 Sections
 ---------
 
-Sections, i,e. top level tabs, are displayed at the bottom 
-of the page.
+Sections are the text links found in the footer, i,e. Terms of Service, Privacy Policy, Full Site
 
-These will contain
+This can be set the same way as the main navigation, only the name of the category 
+differs, as the sections use "mobile_sections".
 
-* All top level content items
+You can customize this viewlet by overriding *Sections* viewlet in gomobiletheme.basic.
 
-* Tabs configured in ZMI portal_actions / portal_tabs
-
-* Search link to the search form
-
-* Feedback link to contact-info form
-
-You can customize this by overriding *Sections* viewlet in gomobiletheme.basic.
 
 Front page shortcut
 -------------------

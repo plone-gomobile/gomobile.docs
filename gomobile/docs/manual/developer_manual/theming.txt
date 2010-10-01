@@ -27,7 +27,38 @@ Best practices
 
 * Read :doc:`Transformations </developer_manual/transformations>` for info about different CSS files
   and their purposes.
-  
+
+Creating your first theme
+-------------------------
+
+You can include ``paster`` command in your ``buildout.cfg``
+with ``gomobile.templates`` package included.
+This will you give a ``paster`` command with the 
+template *gomobile_theme*.
+
+buildout.cfg::
+
+        parts =
+                ...
+                paster
+
+        [paster]
+        recipe = zc.recipe.egg
+        eggs = 
+                PasteScript 
+                gomobile.templates
+                ${instance:eggs}
+
+Then you can create your own theme skeleton with::
+
+        bin/buildout # reruns to build paster command
+        cd src
+        ../bin/paster create -t gomobile_theme gomobiletheme.yourcompanyname
+        # Answer questions
+        # Source code is generated for a mobile theme add-on skeleton
+        
+Then follow generic `paster instructions for Plone <http://svn.plone.org/svn/collective/collective.developermanual/trunk/source/tutorials/paste.txt>`_ how to include 
+the generated source code egg in ``buildout.cfg``.
 
 gomobiletheme.basic
 -------------------

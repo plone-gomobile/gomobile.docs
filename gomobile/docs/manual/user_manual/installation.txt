@@ -94,8 +94,8 @@ Setting it up
         * Go Mobile for Plone Default Theme
 
 
-Installation for Plone users
-----------------------------
+Installation for existing Plone sites
+-----------------------------------------
 
 These instructions apply if 
 

@@ -21,16 +21,111 @@ Prerequisitements
 -----------------
 
 The following software stack must be installed to run mFabrik Web and Mobile add-on. 
-All these are covered by the installation instructions here.
 
-* Plone 3 / Python 2.4 
+* lxml / libxml2 libraries
 
-* lxml / libxml2 library
-
-* Python Imaging Library
+* Python Imaging Library (this ships with Plone unified installer)
 
 * Internet connection is needed during the installation process
 
+Installation of fresh site
+-----------------------------
+
+These instructions apply if 
+
+* you do not have an existing Plone site
+
+* you want to test Web and Mobile locally
+
+* For Plone versions 4.x
+
+Ubuntu
+======
+
+Python 2.6 needed, see Python installation instructions below if your
+Ubuntu distribution does not support Python 2.6 as the default Python interpreter.
+
+        sudo apt-get install python2.6 python-imaging python-lxml wget build-essential  python2.6-dev
+        easy-install ZopeSkel
+        paster create -t plone3_buildout gomobile # Will create folder called "gomobile"
+        # just hit enter to all questsions
+        cd gomobile
+        wget http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.cfg
+        python bootstrap.py
+        bin/buildout
+        bin/instance fg # Start Plone in foreground mode
+        
+OSX
+===
+
+Using `ports <http://www.macports.org/>`_
+
+        sudo port install python2.6
+
+Windows
+=======
+
+You need `MingW compiler <http://plone.org/documentation/kb/using-buildout-on-windows>`_ enabled.
+
+* Manually install Plone 4
+
+* Install lxml for Python used with Plone 4
+
+* Edit buildout
+
+* Run buildout
+
+* etc.
+
+Setting it up
+=============
+
+* Go to `http://localhost:8080 <http://localhost:8080>`_
+
+* Follow *Create a new Plone site* link and create a site with add-ons
+
+        * Username/password is *admin* and defined in your buildout.cfg.
+          buildout.cfg option affects this option only during the installation
+          time and you can change the password in the future through the web
+          interface.
+
+        * Go Mobile for Plone
+        
+        * Go Mobile for Plone Default Theme
+
+
+Installation for Plone users
+----------------------------
+
+These instructions apply if 
+
+* you want to mobilize and existing Plone site
+
+Edit ``buildout.cfg`` and add lines::
+
+        extends = 
+                ...
+                http://good-py.appspot.com/release/dexterity/1.0b2?plone=4.0.1
+        
+
+        eggs =
+                ...
+                mfabrik.webandmobile
+
+Rerun buildout.
+
+Restart site.
+
+In *Site Set-up* -> *Add-ons* install the following add-ons
+
+* Go Mobile for Plone
+
+* Go Mobile for Plone Default Theme
+                
+.. note:: 
+
+        Replace Plone version 4.0.1 with your current Plone version.
+        
 For development
 ===============
 
@@ -226,7 +321,7 @@ The following buildout extends are available for you:
 
 * Plone 4 commiter
 
-See `gomobile.buildout project for available URLs and files <http://code.google.com/p/plonegomobile/source/browse/trunk/gomobile/gomobile.buildout>`_.
+See `gomobile.buildout project for available URLs and files <http://code.google.com/p/plonegomobile/source/browse/gomobile.buildout>`_.
 
 Add Go Mobile for Plone snippets to ``buildout.cfg`` as described below::
 
@@ -240,32 +335,25 @@ Add Go Mobile for Plone snippets to ``buildout.cfg`` as described below::
      # Need to refer to buidout.cfg extension which lives on Google Code servers.
      extends =
         http://dist.plone.org/release/4.0/versions.cfg
-        http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.anonymous.cfg
+        http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.trunk.anonymous.cfg
         
      extensions = mr.developer
 
      eggs =
-        Plone
-        ...
         ${gomobile.config:eggs}
 
-    [instance]
-    zcml =
-        ...
-        ${gomobile.config:zcml} 
-        
 
 Different trunk version buildout options are 
 
-* http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.plone-4.trunk.cfg
+* http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.trunk.cfg
 
-* http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.plone-4.trunk.commit-access.cfg
+* http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.trunk.commit-access.cfg
 
-* (Plone 3) http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.commit-access.cfg
+* (Plone 3) http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.trunk.commit-access.cfg
 
-* (Plone 3) http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout/gomobile.trunk.anomymous.cfg
+* (Plone 3) http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.trunk.anomymous.cfg
 
-You can find available versions `here <http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobile.buildout>`_.
+You can find available versions `here <http://plonegomobile.googlecode.com/svn/gomobile.buildout>`_.
         
 *gomobile.trunk.cfg* is an buildout extension file defining trunk package versions
 using `Mr. Developer <http://pypi.python.org/pypi/mr.developer>`_ buildout extension.

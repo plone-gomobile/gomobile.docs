@@ -32,10 +32,11 @@ For site actions to show up, they need to be specified in ZMI:
 * It is not enough only to specify the ID, but other fields also need some values, so
 select the newly created action
 
-* Title, URL and Icon fields are required. For adding a search button, we'll use:
-Title: "Search",
-URL: "string:${portal_url}/search",
-Icon: "string:${portal_url}/++resource++gomobiletheme.basic/actions/search.png"
+* Title, URL and Icon fields are required. For adding a search button, we'll use::
+
+        Title: "Search",
+        URL: "string:${portal_url}/search",
+        Icon: "string:${portal_url}/++resource++gomobiletheme.basic/actions/search.png"
 
 You can customize this viewlet by overriding *TopActions* viewlet in gomobiletheme.basic.
 
@@ -81,10 +82,10 @@ only through ZMI:
 * Select the newly created category and add CMF Action to it
 
 * It is not enough only to specify the ID, but other fields also need some values, so
-select the newly created action
+  select the newly created action
 
 * Title and URL fields are required (the URL field is an expression so you can use
-for example "string:${portal_url}/" here for the home page)
+  for example "string:${portal_url}/" here for the home page)
 
 You can customize this viewlet by overriding *Navigation* viewlet in gomobiletheme.basic.
 

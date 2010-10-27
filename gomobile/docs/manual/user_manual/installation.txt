@@ -48,7 +48,7 @@ Ubuntu
 Python 2.6 needed, see Python installation instructions below if your
 Ubuntu distribution does not support Python 2.6 as the default Python interpreter.
 
-.. highligh:: console
+::
 
         sudo apt-get install python2.6 python-imaging python-lxml wget build-essential  python2.6-dev
         easy_install ZopeSkel
@@ -66,7 +66,7 @@ OSX
 First install XCode and `Macports <http://www.macports.org/>`_.
 In Terminal, after installing Macports
 
-.. highligh:: console
+::
 
         sudo port install python26 py26-pil py26-lxml
         easy_install ZopeSkel
@@ -95,43 +95,59 @@ You need `MingW compiler <http://plone.org/documentation/kb/using-buildout-on-wi
 Setting it up
 =============
 
-* Go to `http://localhost:8080 <http://localhost:8080>`_
+Go to `http://localhost:8080 <http://localhost:8080>`_.
 
-* Follow *Create a new Plone site* link and create a site with the following add-ons checked
+Follow *Create a new Plone site* link and create a site with the following add-ons checked.
 
-        * Username/password is *admin* and defined in your buildout.cfg.
-          buildout.cfg option affects this option only during the installation
-          time and you can change the password in the future through the web
-          interface.
+* Username/password is *admin* and defined in your buildout.cfg.
+  buildout.cfg option affects this option only during the installation
+  time and you can change the password in the future through the web
+  interface.
 
-        * Go Mobile 
-        
-        * Go Mobile Default Theme
+* Check Go Mobile 
+
+* Check Go Mobile Default Theme
         
 .. figure::  ../images/addons.png
    :align:   center
 
    Tick these add-ons    
 
-Editing hosts
-+++++++++++++  
- 
-You need to modify hosts file to have special m.localhost
-site to show your mobile site on your local computer.
+Modifying your local hosts file
++++++++++++++++++++++++++++++++++++
 
-Edit ``/etc/hosts`` file on your system. You need root privileges.
+`Hosts file <http://en.wikipedia.org/wiki/Hosts_(file)>`_ 
+is your operating system text file which 
+allows you to manually add DNS names on different
+IP addresses. For testing and developing Go Mobile for Plone you 
+need to assign another name for your local computer, also
+known as ``localhost`` or by IP address ``127.0.0.1``. 
+
+After modifications, the following URL will render in web mode (like before modification)
+
+    http://localhost:8080/Plone
+    
+..but the following will result to the mobile mode
+
+    http://m.localhost:8080/Plone
+    
+...and the following page is laoded by mobile simulator
+
+    http://preview.localhost:8080/Plone
+
+hosts file location
+====================
+
+On Windows: ``C:\\Windows\\SYSTEM32\\Drivers\\etc\\hosts``
+
+On UNIX: ``/etc/hosts``
+
+Adding required lines
+=====================
 
 Add the following line to hosts file (note that on UNIX you need to use sudo)::
 
         127.0.0.1       m.localhost preview.localhost
-
-Now you can access web site in URL:
-
-        http://localhost:8080
-        
-... and mobile site in URL:
-
-        http://m.localhost:8080
         
 
 Installation for existing Plone sites
@@ -264,41 +280,7 @@ on these platforms otherwise.
 
 On Windows, they are included in the unified installer.
 
-Modifying your hosts file
---------------------------
 
-`Hosts file <http://en.wikipedia.org/wiki/Hosts_(file)>`_ 
-is your operating system text file which 
-allows you to manually add DNS names on different
-IP addresses. For testing and developing Go Mobile for Plone you 
-need to assign another name for your local computer, also
-known as ``localhost`` or by IP address ``127.0.0.1``. 
-
-After modifications, the following URL will render in web mode (like before modification)::
-
-    http://localhost:8080/Plone
-    
-..but the following will result to the mobile mode::
-
-    http://m.localhost:8080/Plone
-    
-...and the following page is laoded by mobile simulator::
-
-    http://preview.localhost:8080/Plone
-
-hosts file location
-====================
-
-On Windows: C:\\Windows\\SYSTEM32\\Drivers\\etc\\hosts
-
-On UNIX: /etc/hosts
-
-Adding required lines
-=====================
-
-Add the following line to hosts file (note that on UNIX you need to use sudo)::
-
-        127.0.0.1       m.localhost preview.localhost
 
 Starting Plone in debug mode
 ----------------------------------

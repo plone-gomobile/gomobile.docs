@@ -64,13 +64,15 @@ OSX
 ===
 
 First install XCode and `Macports <http://www.macports.org/>`_.
-In Terminal, after installing Macports
+
+The following Terminal spell installs and starts Web and Mobile, after installing Macports
 
 ::
 
-        sudo port install python26 py26-pil py26-lxml
+        sudo port install python26 py26-pil py26-lxml wget
         easy_install ZopeSkel
-        # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions 
+        paster create -t plone3_buildout gomobile # This creates gomobile folder
+        # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions         
         cd gomobile
         wget http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.cfg
         python2.6 bootstrap.py

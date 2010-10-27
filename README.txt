@@ -19,7 +19,7 @@ Example::
         
         bin/buildout
                 
-        bin/sphinx-build manual build
+        rm -rf build/* ; bin/sphinx-build manual build
         
 Uploading the documentation
 -----------------------------
@@ -28,7 +28,7 @@ Create Plone Help Center content type *Reference manual* with id *documentation*
 
 Then upload the documentation using Zope's XML-RPC machinery using the following script command::         
         
-        bin/toplone http://admin:yourpass@localhost:8080/yoursiteid/documentation
+        bin/toplone http://admin:x@webandmobile.mfabrik.com/docs/web-and-mobile
 
 Author
 ------

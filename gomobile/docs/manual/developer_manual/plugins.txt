@@ -1,5 +1,5 @@
 ===========================================================
- Extending and adapting Go Mobile framework for your needs
+ Extending and customizing
 ===========================================================
 
 .. contents :: :local: 

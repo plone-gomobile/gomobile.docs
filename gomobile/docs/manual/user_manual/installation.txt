@@ -1,5 +1,5 @@
 ====================================
- Installing Go Mobile for Plone
+ Installation
 ====================================
 
 .. contents :: :local:
@@ -7,7 +7,8 @@
 Introduction
 -------------
 
-This document tells how to install Plone with Go Mobile add-on on your server or development computer.
+This document tells how to install *Web and Mobile* as
+standalone or to the existing Plone CMS site.
 
 Supported operating systems are all operating systems which run Plone
 
@@ -15,16 +16,18 @@ Supported operating systems are all operating systems which run Plone
 
 * OSX 
 
-* Windows
+* Windows (instructions pending)
 
-Prerequisitements
------------------
+Prerequisites
+-------------
 
 The following software stack must be installed to run mFabrik Web and Mobile add-on. 
 
+* GCC compiler 
+
 * lxml / libxml2 libraries
 
-* Python Imaging Library (this ships with Plone unified installer)
+* Python Imaging Library 
 
 * Internet connection is needed during the installation process
 
@@ -45,22 +48,34 @@ Ubuntu
 Python 2.6 needed, see Python installation instructions below if your
 Ubuntu distribution does not support Python 2.6 as the default Python interpreter.
 
+.. highligh:: console
+
         sudo apt-get install python2.6 python-imaging python-lxml wget build-essential  python2.6-dev
-        easy-install ZopeSkel
+        easy_install ZopeSkel
         paster create -t plone3_buildout gomobile # Will create folder called "gomobile"
-        # just hit enter to all questsions
+        # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions 
         cd gomobile
         wget http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.cfg
-        python bootstrap.py
+        python2.6 bootstrap.py
         bin/buildout
         bin/instance fg # Start Plone in foreground mode
         
 OSX
 ===
 
-Using `ports <http://www.macports.org/>`_
+First install XCode and `Macports <http://www.macports.org/>`_.
+In Terminal, after installing Macports
 
-        sudo port install python2.6
+.. highligh:: console
+
+        sudo port install python26 py26-pil py26-lxml
+        easy_install ZopeSkel
+        # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions 
+        cd gomobile
+        wget http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.cfg
+        python2.6 bootstrap.py
+        bin/buildout
+        bin/instance fg # Start Plone in foreground mode
 
 Windows
 =======
@@ -162,7 +177,7 @@ The following is also needed for software development:
 
 * Subversion client (svn)
 
-Installing prerequisitements
+Installing prerequisites
 ----------------------------
 
 Windows

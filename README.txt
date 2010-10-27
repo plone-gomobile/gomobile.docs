@@ -9,7 +9,7 @@ Compiling the documentation
 
 Example::
 
-        source ~/py24/bin/activate # Enter virtualenv
+        source ~/python2.6/bin/activate # Enter virtualenv
         
         python bootstrap.py 
         
@@ -18,7 +18,7 @@ Example::
         bin/develop co ""
         
         bin/buildout
-        
+                
         bin/sphinx-build manual build
         
 Uploading the documentation

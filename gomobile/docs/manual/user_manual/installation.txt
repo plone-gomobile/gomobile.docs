@@ -82,17 +82,42 @@ Setting it up
 
 * Go to `http://localhost:8080 <http://localhost:8080>`_
 
-* Follow *Create a new Plone site* link and create a site with add-ons
+* Follow *Create a new Plone site* link and create a site with the following add-ons checked
 
         * Username/password is *admin* and defined in your buildout.cfg.
           buildout.cfg option affects this option only during the installation
           time and you can change the password in the future through the web
           interface.
 
-        * Go Mobile for Plone
+        * Go Mobile 
         
-        * Go Mobile for Plone Default Theme
+        * Go Mobile Default Theme
+        
+.. figure::  ../images/addons.png
+   :align:   center
 
+   Tick these add-ons    
+
+Editing hosts
++++++++++++++  
+ 
+You need to modify hosts file to have special m.localhost
+site to show your mobile site on your local computer.
+
+Edit ``/etc/hosts`` file on your system. You need root privileges.
+
+Add the following line to hosts file (note that on UNIX you need to use sudo)::
+
+        127.0.0.1       m.localhost preview.localhost
+
+Now you can access web site in URL:
+
+        http://localhost:8080
+        
+... and mobile site in URL:
+
+        http://m.localhost:8080
+        
 
 Installation for existing Plone sites
 -----------------------------------------

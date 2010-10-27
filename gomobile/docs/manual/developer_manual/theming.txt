@@ -73,6 +73,11 @@ You may or may not opt-in to use these practices.
 
 * `gomobiletheme.basic README <http://plonegomobile.googlecode.com/svn/trunk/gomobile/gomobiletheme.basic/README.txt>`_ 
 
+Notes
+=====
+
+* Top actions viewlet (search icon, contact icon) is not supported on Plone 3
+
 Customization examples
 -----------------------
 

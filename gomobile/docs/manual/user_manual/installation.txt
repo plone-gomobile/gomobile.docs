@@ -56,6 +56,7 @@ Ubuntu distribution does not support Python 2.6 as the default Python interprete
         # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions 
         cd gomobile
         wget http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.cfg
+        mv gomobile.plone-4.cfg buildout.cfg # Rename to buildout.cfg
         python2.6 bootstrap.py
         bin/buildout
         bin/instance fg # Start Plone in foreground mode
@@ -75,6 +76,7 @@ The following Terminal spell installs and starts Web and Mobile, after installin
         # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions         
         cd gomobile
         wget http://plonegomobile.googlecode.com/svn/gomobile.buildout/gomobile.plone-4.cfg
+        mv gomobile.plone-4.cfg buildout.cfg # Rename to buildout.cfg
         python2.6 bootstrap.py
         bin/buildout
         bin/instance fg # Start Plone in foreground mode

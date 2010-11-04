@@ -1,6 +1,10 @@
 ===================================
- Plone add-on product support
+ Add-on product support
 ===================================
+
+.. admonition:: Description
+	
+	How various Plone community add-ons can be mobilized
 
 .. contents :: :local:
 

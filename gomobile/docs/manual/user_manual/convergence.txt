@@ -2,9 +2,16 @@
  Multichannel publishing
 =========================
 
-Wuth Go Mobile Convergence add-on 
+.. admonition:: Description
+
+	Fine-tuning content publishing settings for multichannel
+
+Introduction
+------------
+
+With *Convergence* add-on 
 you can fine tune how your content is published across
-web and mobile.
+web and mobile medias.
 
 You can choose publication channels
 
@@ -17,4 +24,89 @@ You can choose publication channels
 For more information, see :doc:`Content Mobile Options </user_manual/options>`
 
 
+Web and Mobile defines mobile aware options (i.e. mobile behavior) 
+for each content item.
+
+These options are different whether you are doing
+
+* Mobile publishing only (Web and Mobile add-on installed)
+
+* Mixed mobile and web publishing (Web and Mobile + Web and Mobile Convergence add-ons installed)
+
+Mobile options
+---------------------
+
+These are available on every content item using *Mobile options*
+link in the *Actions* menu of the content item (see green menu bar). 
+
+.. note:: 
+
+	If you have hidden plone.belowcontentbody viewlet manager,
+	none of document actions link is visible. You need to make
+	this viewlet visible using Plone's @@manage-viewlets mechanism.
+
+Mobile folder listing
+======================
+
+If enabled, show automatic mobile folder listing
+on this page. All child content items are 
+listed in "Here you can also find:" section 
+below the page content, before the footer.
+
+If the page is not folderish, the items of parent
+folder are listed here.
+
+Default is on.
+
+Appear in mobile folder listing
+================================
+
+You can hide certain content items 
+from mobile folder listing. 
+
+Defualt is on, appears.
+	
+Convergence options
+---------------------
+
+These additional options are available if you have installed *Convergence* add-on.
+
+Content media
+=============
+
+You can choose whether this content is availble on
+
+* web
+
+* mobile 
+
+* both
+
+Default is both.
+
+This affects to
+
+* Folder listing
+
+* Sitemap
+
+* Search results
+
+Content overrides
+=================
+
+You can define field level overrides to make content differ
+on web and mobile.
+
+Web and Mobile Convergence supports this for the following content types by default
+
+* Page 
+
+You can override fields texts
+
+* Title
+
+* Description
+
+* Body text
 

@@ -2,9 +2,11 @@
  License and open source contributions
 =======================================
 
-All Go Mobile for Plone code falls under GPL 2 license.
+All material is licensed under GPL 2 license.
 
-All Go Mobile for Plone code is copyrighted by mFabrik Reseacrh Oy.
+All material is copyrighted or relicensable by mFabrik Research Oy.
+
+For more information, see `the contribution agreement <http://webandmobile.mfabrik.com/community/contribution-agreement>`_.
 
 This covers:
 
@@ -14,25 +16,8 @@ This covers:
 
 * mobile.* Python packages
 
-Contribution agreement
-----------------------
+* mfabrik.* Python packages
 
-Currently all code must be GPL'ed as this is Plone Foundation's 
-policy for Plone plug-ins. However this might change in the future. 
-
-* We'd like to keep the copyright on a single party so we
-  can make the necessary licensing adjustments in the future
-
-* We'd like to use mFabrik branding for the project to show there is 
-  at least one strong company behind the project - this is 
-  prerequisitement for some customer 
-
-* Since mFabrik has done the initial investment, we'd like to protect 
-  and nourish the project until it is self-sustanaible and can be given 
-  to a foundation or any other business interest neutral entity 
-
-* There is also a possibility that we will raise funding for the 
-  project and in this case IPR must be clear
 
 Dependencies
 ------------

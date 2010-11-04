@@ -1,5 +1,5 @@
 ==========================================
- mFabrik Web and Mobile site settings
+ Settings and configuration
 ==========================================
 
 All Go Mobile settings can be configured through web interface.

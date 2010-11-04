@@ -1,8 +1,8 @@
 ====================================================
- Optimal user experience with mFabrik Web and Mobile
+ Userexperience optimizations
 ====================================================
 
-Go Mobile tries hard to achieve the most optimal mobile browsing experience,
+Web and Mobile goes to great lengths to achieve the most optimal mobile browsing experience,
 and it success quite well. 
 
 This all is achieved

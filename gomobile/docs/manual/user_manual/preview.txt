@@ -2,6 +2,9 @@
  Previewing the mobile site
 ============================
 
+Introduction
+------------
+
 Go Mobile gives you a single click preview to see how your site will look on
 a mobile screen-
 

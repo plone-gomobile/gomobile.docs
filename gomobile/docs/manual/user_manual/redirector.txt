@@ -1,5 +1,5 @@
 =========================================================
- Discriminating visitors between web and mobile site 
+ Redirects between web and mobile site 
 =========================================================
 
 .. admonition:: Description

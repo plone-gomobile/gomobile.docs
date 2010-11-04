@@ -2,6 +2,10 @@
  Roadmap
 ==================
 
+.. admonition:: Description
+
+	Roadmap notes for Web and Mobile product development
+
 .. contents :: :local:
 
 Introduction

@@ -12,7 +12,6 @@ special consideration to work optimally.
 
 Here are explained some options and rules which make navigation smooth on Go Mobile.
 
-
 Mobile Site Actions
 --------------------
 

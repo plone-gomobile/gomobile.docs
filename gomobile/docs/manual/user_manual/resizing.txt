@@ -1,5 +1,5 @@
 ================================================
- Mobile image optimizations
+ Image resize and optimization
 ================================================
 
 .. contents:: :local:

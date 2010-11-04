@@ -2,6 +2,10 @@
  Theming
 ======================
 
+.. admonition:: Description
+
+        How to build mobile themes for Plone 
+
 .. contents :: :local:
 
 Introduction
@@ -352,4 +356,23 @@ Add to your viewlets.py::
         # Fix for grok 1.0 template inheritance
         # https://bugs.launchpad.net/grok/+bug/255005
         fix_grok_template_inheritance(Logo, base.Logo)
+
+Plone 3 support
+---------------
+
+Your theme skins.xml must declare support for ``gomobiletheme_plone3``::
+
+        <?xml version="1.0"?>
+        <object name="portal_skins" allow_any="False" cookie_persistence="False">
+        
+         <object name="saariselka_mobi"
+            meta_type="Filesystem Directory View"
+            directory="saariselka.mobi:skins/saariselka_mobi"/>
+        
+         <skin-path name="saariselka.mobi" based-on="Plone Go Mobile Default Theme">
+          <layer name="saariselka_mobi" insert-after="custom"/>
+          <layer name="gomobiletheme_plone3" insert-after="saariselka_mobi"/>
+         </skin-path>
+        
+        </object>
 

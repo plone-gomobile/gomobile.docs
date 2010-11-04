@@ -10,8 +10,7 @@ using Go Mobile mobile CMS product.
    :maxdepth: 2
    
    features
-   installation
-   license
+   installation   
    optimal_experience
    convergence
    preview
@@ -26,6 +25,7 @@ using Go Mobile mobile CMS product.
    varying
    addons
    roadmap
+   license
    troubleshooting
    
       

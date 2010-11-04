@@ -28,7 +28,7 @@ Sitemap submission
 Sitemap file (sitemap.xml.gz) can be submitted to the search engines
 to make the content be searchable faster and more accurately.
 
-Please see :doc:`Mobile Sitemap protocol </user_manual/sitemap>`
+Please see :doc:`Mobile Sitemap protocol </user-manual/sitemap>`
 
 robots.txt
 -----------

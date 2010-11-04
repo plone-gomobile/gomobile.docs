@@ -74,7 +74,7 @@ mobile.sniffer
 
 * Abstraction layout for different handset database abstraction
 
-* Brand name recognizition regular expressions for mobile redirects two provide :doc:`two pass user agent detection </user_manual/sniffing>`
+* Brand name recognizition regular expressions for mobile redirects two provide :doc:`two pass user agent detection </user-manual/sniffing>`
 
 * Pluggable backend mechanism
 
@@ -161,7 +161,7 @@ gomobiletheme.basic
 
 Default mobile site theme which can be extended for your specific needs.
 
-See more about :doc:`theming </developer_manual/theming>`.
+See more about :doc:`theming </developer-manual/theming>`.
 
 * Uses `Grok <http://grok.zope.org>`_ API and five.grok views and viewlets
 

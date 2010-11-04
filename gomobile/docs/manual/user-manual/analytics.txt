@@ -56,7 +56,7 @@ Javascript are not being tracked.
 
 	This is the default tracking method for Web and Mobile	
 
-* Go to :doc:`Web and Mobile Settings </user_manual/settings>`
+* Go to :doc:`Web and Mobile Settings </user-manual/settings>`
 
 * As a ``tracker_name``, enter ``plone-default``
 
@@ -75,7 +75,7 @@ Javascript (not suitable for low end phones).
 
 * Extract tracking id which is in format "UA-8819100-123"
 
-* Now, go to :doc:`Web and Mobile Settings </user_manual/settings>`
+* Now, go to :doc:`Web and Mobile Settings </user-manual/settings>`
 
 * As a *tracker_name*, enter *google-web*
 
@@ -91,7 +91,7 @@ Image based tracking
 
 * Extract tracking id which is in format "MO-1234-12"
 
-* Now, go to :doc:`Web and Mobile Settings </user_manual/settings>`
+* Now, go to :doc:`Web and Mobile Settings </user-manual/settings>`
 
 * As a *tracker_name*, enter *google-mobile*
 

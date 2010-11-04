@@ -53,7 +53,7 @@ Traceback::
         # Module PythonExpr, line 1, in <expression>
 
 You are trying to use Plone 4 main_template.pt on Plone 3 site.
-Please see :doc:`installation instructions </user_manual/installation>` how to fix this.
+Please see :doc:`installation instructions </user-manual/installation>` how to fix this.
        
 
 

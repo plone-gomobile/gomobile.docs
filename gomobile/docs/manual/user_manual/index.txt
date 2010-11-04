@@ -14,7 +14,6 @@ using Go Mobile mobile CMS product.
    license
    optimal_experience
    convergence
-   options
    preview
    navigation
    redirector
@@ -24,7 +23,6 @@ using Go Mobile mobile CMS product.
    sitemap
    settings
    sniffing
-   themes
    varying
    addons
    roadmap

@@ -7,7 +7,10 @@ Features
         How mFabrik Web and Mobile multichannel CMS will solve
         your mobile publishing and content management needs.
         
-* Go mobile for Plone is a mobile extension for award-winning, open source, 
+Introduction
+------------        
+        
+* Web and Mobile is a mobile extension for award-winning, open source, 
   `Plone content management system <http://plone.org>`_
   
 * :doc:`Open source </user_manual/license>` licensing guarantees that you stay free
@@ -22,7 +25,7 @@ Features
 .. figure::  ../developer_manual/images/features.png
    :align:   center
 
-   Go Mobile for Plone is an add-on product to add multichannel publishing
+   Web and Mobile is an add-on product to add multichannel publishing
    features to Plone content management system. 
    
        
@@ -30,7 +33,7 @@ The best technology
 ===================        
 
 Plone is an add-on for award-winning, open source CMS.
-Go Mobile for Plone turns it to a multichannel publishing platform.
+Web and Mobile turns it to a multichannel publishing platform.
       
 You can leverage hundreds of existing `Plone add-on products <http://plone.org/products>`_ 
 in multichannel publishing easily: blogs, forums, polls, intranets, enterprise network authentication...
@@ -38,10 +41,10 @@ in multichannel publishing easily: blogs, forums, polls, intranets, enterprise n
 The best usability
 ==================
 
-Go Mobile for Plone provides :doc:`optimal mobile browsing experience </user_manual/optimal_experience>` 
+Web and Mobile provides :doc:`optimal mobile browsing experience </user_manual/optimal_experience>` 
 for your site visitors. :doc:`You can have single URL address for web and mobile site </user_manual/redirector>` - the user will be
 catered correctly no matter on which device or browser is being used. 
-Go Mobile for Plone supports thousands of :doc:`mobile phones models </user_manual/sniffing>`, and 
+Web and Mobile supports thousands of :doc:`mobile phones models </user_manual/sniffing>`, and 
 is not limited to smarthphones only.
   
 Publish to different medias have been made easy. 
@@ -54,11 +57,11 @@ when you are still writing it
 The best code
 =============
   
-Go Mobile for Plone have high quality :doc:`extensible </developer_manual/plugins>` Python code base with test
+Web and Mobile have high quality :doc:`extensible </developer_manual/plugins>` Python code base with test
 suite over hundred automatic tests. Many of modules are generic in nature and can be used outside
-Go Mobile for Plone. The code is extensively documented and commented.
+Web and Mobile. The code is extensively documented and commented.
   
-You can :doc:`build themes  </user_manual/themes>` which will compatible 
+You can :doc:`build themes  </developer_manual/theming>` which will compatible 
 for different mobile phone models.
   
 Open source

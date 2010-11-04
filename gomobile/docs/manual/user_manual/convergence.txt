@@ -21,9 +21,6 @@ You can choose publication channels
 
 * On field level (different text on one field)
 
-For more information, see :doc:`Content Mobile Options </user_manual/options>`
-
-
 Web and Mobile defines mobile aware options (i.e. mobile behavior) 
 for each content item.
 

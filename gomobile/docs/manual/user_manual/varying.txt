@@ -1,5 +1,5 @@
 ========================================
- Special mobile site features 
+ Special mobile features 
 ========================================
 
 Go Mobile can enable and disable special site features based on the used mobile browser.

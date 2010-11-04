@@ -145,17 +145,7 @@ String, the tracker name.
 
 Leave empty if no tracking is used.
 
-Possible values:
-
-* *google* for Google analytics mobile
-        
-* *bango* for Bango  
-        
-* *admob* for AdMob
-
-.. note::
-
-        Bango and AdMob trackers exist, but are not currently officially supported.
+For more information, see :doc:`analytics </user_manual/analytics>`_.
         
          
 tracking_id

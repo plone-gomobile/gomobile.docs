@@ -2,6 +2,15 @@
  Tracking mobile visitors
 ============================
 
+.. admonition:: Description
+
+	How to set up tracking and analytics for a mobile site
+
+.. contents:: :local:
+
+Introduction
+------------
+
 Mobile browser limitations prevent
 using Javascript based tracking on mobile pages,
 which is the most dominant tracking form on the web.
@@ -17,27 +26,42 @@ out of the box, or write your own.
 Supported tracking services
 ----------------------------
 
+* Plone default (the same Javascript used as used on normal web pages)
+
 * Google Analytics Mobile
 
-* Google Analytics Web (the same Javascript used as used on normal web pages)
+* Google Analytics Web 
 
 * AdMob
 
 * Bango
 
-How to set-up a tracker (Google)
+How to set-up a tracker 
 ----------------------------------
 
 .. warning::
 
         In pre-1.0 versions, Go Mobile supports only Javascript based Google Analytics.
+
+Using Plone's default Javascript tracking code
+=================================================
+
+.. note ::
+
+	This is the default tracking method for Web and Mobile
+
+* Now, go to :doc:`Web and Mobile Settings </user_manual/settings>`
+
+* As a ``tracker_name``, enter ``plone-default``
+
+* You can leave ``tracking_id`` empty 
         
 
-Javascript based tracking
-==========================
+Different Javascript for web and mobile sites 
+==============================================
 
 This is the most pain-free tracking method for mobile clients supported
-Javascript (not suitable for low end phones).
+Javascript (not suitable for low end phones). 
 
 * Visit Google Analytics site and create a new site
 
@@ -45,7 +69,7 @@ Javascript (not suitable for low end phones).
 
 * Extract tracking id which is in format "UA-8819100-123"
 
-* Now, go to :doc:`Go Mobile Settings </user_manual/settings>`
+* Now, go to :doc:`Web and Mobile Settings </user_manual/settings>`
 
 * As a *tracker_name*, enter *google-web*
 
@@ -61,7 +85,7 @@ Image based tracking
 
 * Extract tracking id which is in format "MO-1234-12"
 
-* Now, go to :doc:`Go Mobile Settings </user_manual/settings>`
+* Now, go to :doc:`Web and Mobile Settings </user_manual/settings>`
 
 * As a *tracker_name*, enter *google-mobile*
 
@@ -87,6 +111,20 @@ CSS rule.
 When the image URL is formed, HTTP request headers are read
 and forwarded to Google Analytics as HTTP GET query parameters.
 This way refering page etc. are propeply tracked.
+
+Bango
+-----
+
+.. note ::
+
+	Currently unsupported
+	
+Admob
+-----
+
+.. note ::
+
+	Currently unsupported	
 
 Real IP address of the client
 -------------------------------

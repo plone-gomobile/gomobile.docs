@@ -60,7 +60,7 @@ Javascript are not being tracked.
 
 * As a ``tracker_name``, enter ``plone-default``
 
-* You can leave ``tracking_id`` empty 
+* As a ``tracking_id``, enter the tracking id given by Google
         
 
 Different Javascript for web and mobile sites 

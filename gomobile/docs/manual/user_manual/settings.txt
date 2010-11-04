@@ -145,7 +145,7 @@ String, the tracker name.
 
 Leave empty if no tracking is used.
 
-For more information, see :doc:`analytics </user_manual/analytics>`_.
+For more information, see :doc:`analytics </user_manual/analytics>`.
         
          
 tracking_id

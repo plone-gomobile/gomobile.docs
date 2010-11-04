@@ -30,7 +30,7 @@ For site actions to show up, they need to be specified in ZMI:
 * Select the newly created category and add CMF Action to it
 
 * It is not enough only to specify the ID, but other fields also need some values, so
-select the newly created action
+  select the newly created action
 
 * Title, URL and Icon fields are required. For adding a search button, we'll use::
 

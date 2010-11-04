@@ -43,14 +43,20 @@ How to set-up a tracker
 
         In pre-1.0 versions, Go Mobile supports only Javascript based Google Analytics.
 
-Using Plone's default Javascript tracking code
+Using the default Javascript tracking code
 =================================================
+
+The easiest way to set up tracking is to use the same
+Javascript code which is being used on the Plone web site.
+
+The downside is that mobile browsers not supporting
+Javascript are not being tracked.
 
 .. note ::
 
-	This is the default tracking method for Web and Mobile
+	This is the default tracking method for Web and Mobile	
 
-* Now, go to :doc:`Web and Mobile Settings </user_manual/settings>`
+* Go to :doc:`Web and Mobile Settings </user_manual/settings>`
 
 * As a ``tracker_name``, enter ``plone-default``
 

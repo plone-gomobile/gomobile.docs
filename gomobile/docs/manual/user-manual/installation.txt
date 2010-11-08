@@ -50,7 +50,7 @@ Ubuntu distribution does not support Python 2.6 as the default Python interprete
 
 ::
 
-        sudo apt-get install python2.6 python-imaging wget build-essential  python2.6-dev
+        sudo apt-get install python2.6 python-imaging wget build-essential python2.6-dev python-setuptools
         easy_install ZopeSkel
         paster create -t plone3_buildout gomobile # Will create folder called "gomobile"
         # Choose Plone version 4.0.1, set your admin password and just hit enter to otherq uestions 
@@ -60,7 +60,16 @@ Ubuntu distribution does not support Python 2.6 as the default Python interprete
         python2.6 bootstrap.py
         bin/buildout
         bin/instance fg # Start Plone in foreground mode
-        
+
+If your system doesn't have lxml==2.2.6 installed, you can set it up in your virtual environment (no root access required):
+`http://digita.la/2010/6/2/compiling-lxml-libxml2-libxslt-for-a-virtualenv <http://digita.la/2010/6/2/compiling-lxml-libxml2-libxslt-for-a-virtualenv>`_
+
+If you are using virtualenv, and it has no PIL, just do:
+
+::
+
+        easy_install http://dist.repoze.org/PIL-1.1.6.tar.gz
+
 OSX
 ===
 

@@ -2,6 +2,10 @@
  Installation
 ====================================
 
+.. admonition :: Description
+
+        How to install Web and Mobile as standalone or for your existing Plone site
+
 .. contents :: :local:
 
 Introduction

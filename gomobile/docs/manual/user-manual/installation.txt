@@ -228,13 +228,12 @@ The following buildout extends are available for you:
 
 See `gomobile.buildout project for available URLs and files <http://code.google.com/p/plonegomobile/source/browse/gomobile.buildout>`_.
 
-Add Go Mobile for Plone snippets to ``buildout.cfg`` as described below::
+Add Web and Mobile snippets to ``buildout.cfg`` as described below::
 
     [buildout]
 
      parts =
         ...
-        test
         ${gomobile.config:parts}
      
      
@@ -249,14 +248,22 @@ Add Go Mobile for Plone snippets to ``buildout.cfg`` as described below::
      eggs =
         ${gomobile.config:eggs}
         
-     ...
+.. note ::
+
+        For trunk, use eggs = ${gomobile.config:eggs} instead of eggs = mfabrik.webandmobile
+        
+If you want to run unit test also include::
      
      [test]
-        recipe = zc.recipe.testrunner
-        defaults = ['--auto-color', '--auto-progress']
-        eggs = 
-            ${instance:eggs}
+     recipe = zc.recipe.testrunner
+     defaults = ['--auto-color', '--auto-progress']
+     eggs = 
+        ${instance:eggs}
 
+You can also make sure that no release versions are included in development buildout::
+
+        rm -rf eggs/gomobile.*
+        rm -rf eggs/mobile.*
 
 Different trunk version buildout options are 
 

@@ -205,7 +205,7 @@ in the site setup.
 Trunk version for developers
 -----------------------------
 
-This is needed if you wish to develop Go Mobile for Plone code base.
+This is needed if you wish to develop Web and Mobile code base.
 
 .. note ::
 
@@ -213,7 +213,7 @@ This is needed if you wish to develop Go Mobile for Plone code base.
         Mr. Developer recipes "ignore certificate errors"
         does not work. 
 
-Modify buildout to include Go Mobile trunk version sources
+Modify buildout to include Web and Mobile trunk version sources
 ==========================================================
 
 The following buildout extends are available for you:

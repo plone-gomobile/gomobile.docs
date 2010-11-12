@@ -32,8 +32,8 @@ Best practices
 * Read :doc:`Transformations </developer-manual/transformations>` for info about different CSS files
   and their purposes.
 
-Creating your first theme
--------------------------
+Creating your mobile theme
+---------------------------
 
 You can include ``paster`` command in your ``buildout.cfg``
 with ``gomobile.templates`` package included.
@@ -331,7 +331,7 @@ To use its main_template.pt add profiles/default/skins.xml to your theme package
         <object name="portal_skins" allow_any="False" cookie_persistence="False">
         
                  <!-- Declare dependency to gomobiletheme.basic so that its skin layeres are also included when this theme is installed -->
-                 <skin-path name="plonecommunity.mobi theme" based-on="Go Mobile Default Theme">
+                 <skin-path name="plonecommunity_mobi theme" based-on="Go Mobile Default Theme">
                  </skin-path>
                 
         

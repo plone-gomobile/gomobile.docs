@@ -350,6 +350,9 @@ After test suite completes, it should report zero failures::
 Troubleshooting
 ---------------
 
+lxml too old
+============
+
 If you get start up error::
 
     zope.configuration.xmlconfig.ZopeXMLConfigurationError: File "/home/moo/code/gomobile3/parts/instance/etc/site.zcml", line 15.2-15.23
@@ -371,6 +374,52 @@ More info
 
 * http://svn.plone.org/svn/collective/collective.developermanual/trunk/source/troubleshooting/exceptions.txt 
   (search for System lxml too old)
-  
-  
-               
+
+
+This container already has a Virtual Host Monster
+=================================================
+
+You get this when trying to create fresh Plone 3 site Web and Mobile::
+
+      File "/home/moo/code/gomobile3/parts/zope2/lib/python/zope/interface/adapter.py", line 535, in subscribers
+        subscription(*objects)
+      File "/home/moo/code/gomobile3/parts/zope2/lib/python/OFS/subscribers.py", line 116, in dispatchObjectMovedEvent
+        callManageAfterAdd(ob, event.object, event.newParent)
+      File "/home/moo/code/gomobile3/parts/zope2/lib/python/OFS/subscribers.py", line 149, in callManageAfterAdd
+        ob.manage_afterAdd(item, container)
+      File "/home/moo/code/gomobile3/parts/zope2/lib/python/Products/SiteAccess/VirtualHostMonster.py", line 126, in manage_afterAdd
+        raise BadRequest, ('This container already has a %s' %
+    zExceptions.BadRequest: This container already has a Virtual Host Monster
+
+Reason: bug in Plone / Zope. For some reason, it fails to create fresh ZODB database (Data.fs file) properly.
+
+Workaround:
+
+* Remove mfabrik.webandmobile from buildout
+
+* ``rm var/filestorage/Data.fs`` to clear broken database
+
+* Run buildout
+
+* Start Plone ``bin/instance fg``
+
+* Stop Plone, press CTRL+C
+
+* Add new Zope admin user ``bin/instance adduser admin admin``
+
+* Renable mfabrik.webandmobile in buildout
+
+* Run buildout
+
+* Start Plone
+
+Unable to preview
+=================
+
+If you get this error when opening the preview::
+
+    Unable to connect
+    
+    Firefox can't establish a connection to the server at preview.localhost:8080.  
+
+You need to set up ``/etc/hosts`` file as explained in the installation instructions.               

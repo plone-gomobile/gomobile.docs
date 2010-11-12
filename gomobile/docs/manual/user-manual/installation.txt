@@ -20,12 +20,12 @@ Supported operating systems are all operating systems which run Plone
 
 * OSX 
 
-* Windows (instructions pending)
+* Windows (note: for Windows complete instructions are not available)
 
 Prerequisites
 -------------
 
-The following software stack must be installed to run mFabrik Web and Mobile add-on. 
+The following software stack is needed in order to install and run mFabrik Web and Mobile 
 
 * GCC compiler 
 
@@ -170,9 +170,10 @@ Add the following line to hosts file (note that on UNIX you need to use sudo)::
 Installation for existing Plone sites
 -----------------------------------------
 
-These instructions apply if 
+These instructions apply if  you want to mobilize an existing Plone site.
 
-* you want to mobilize and existing Plone site
+Plone 4 buildout.cfg changes
+============================
 
 Edit ``buildout.cfg`` and add lines::
 
@@ -185,159 +186,24 @@ Edit ``buildout.cfg`` and add lines::
                 ...
                 mfabrik.webandmobile
 
-Rerun buildout.
+Plone 3 buildout.cfg changes
+============================
 
-Restart site.
+Edit ``buildout.cfg`` and add lines::
 
-In *Site Set-up* -> *Add-ons* install the following add-ons
-
-* Go Mobile for Plone
-
-* Go Mobile for Plone Default Theme
-                
-.. note:: 
-
-        Replace Plone version 4.0.1 with your current Plone version.
+        extends = 
+                ...
+                http://good-py.appspot.com/release/dexterity/1.0b2?plone=3.3.5
         
-For development
-===============
+        eggs =
+                ZPublisherEventsBackport
+                mfabrik.webandmobile
 
-The following is also needed for software development:
-
-* GCC compiler (MingW on Windows)
-
-* Python development headers (sudo apt-get install python2.4-dev)
-
-* Subversion client (svn)
-
-Installing prerequisites
-----------------------------
-
-Windows
-=======
-
-* Run Plone 3 installer 
-
-* Register your Python distribution to Windows registry
-
-* Install lxml: http://pypi.python.org/pypi/lxml/2.2.4 (Download .exe for Python 2.4)
-
-OSX
-===
-
-* Install XCode / OSX SDK
-
-* Use `collective.buildout <http://svn.plone.org/svn/collective/buildout/python/src/docs>`_
-  to create a Python 2.4 interpreter from source
-  
-* Activate virtualenv of Python 2.4 interpreter (this will modify default look-up paths of shell)
-
-::
-
-  source ~/python-buildout/python2.4/bin/activate
-    
-* Install Plone project templates
-
-::
-
-  easy_install ZopeSkel
-  
-* Create Plone 3 buildout
-
-::
-
-  paster create -t plone3_buildout webandmobile
-  
-Linux
-=====
-
-Install gcc, Python 2.4 and setuptools (may vary depending on the distribution)::
-
-   sudo apt-get install build_essential python2.4 python2.4-dev 
-
-Install Distribute (setuptools replacement) for Python 2.4::
-
-    curl -O http://python-distribute.org/distribute_setup.py
-    python2.4 distribute_setup.py
-
-Install virtualenv::
-
-    easy_install virtualenv
-    
-Create Python environment for your Plone
-
-::
-
-    virtualenv --no-site-packages -p /usr/bin/python2.4 plone-python
-    
-Activate environment
-
-::
-
-    source plone-python/bin/activate
-         
-* Install Plone project templates
-
-::
-
-  easy_install ZopeSkel
-  
-* Create Plone 3 buildout
-
-::
-
-  paster create -t plone3_buildout webandmobile
-
-Differences between Windows buildout and UNIX buildouts
--------------------------------------------------------
-
-UNIX buildout comes with PIL and lxml recipes,
-as it is pain to set-up these binaries
-on these platforms otherwise.
-
-On Windows, they are included in the unified installer.
-
-
-
-Starting Plone in debug mode
-----------------------------------
-
-Run command::
-
-        bin/instance fg
-
-On Windows, open the command line and type::
-
-        cd "C:\Program Files\Plone 3"
-        bin\instance.exe fg
-
-Installing add-on products on Plone site
------------------------------------------
-
-This step is executed after you have a running Plone instance in place.
-They modify a running Plone site database, so that all 
-stuff needed for running mobile site is there.
-
-Installing add-on products
-==========================
-
-Login to Plone site as administrative user.
-Your admin account has been given you either
-
-* In adminPassword
-
-* In buildout.cfg file (buildout based installations)
-
-Use *Site setup* control panel in Plone and its *Add-on products* tool to install Go Mobile add-on products.
-
-* *Go Mobile* is needed always
-
-* *Go Mobile Default Theme* or any other mobile theme is needed always
-
-* *Go Mobile Convergence* is needed if you wish to publish **both** web and mobile content on the same site
-
-Trunk version installation
---------------------------
+Then follow the instructions above how to modify ``hosts`` file and install add-ons 
+in the site setup.
+        
+Trunk version for developers
+-----------------------------
 
 This is needed if you wish to develop Go Mobile for Plone code base.
 
@@ -481,6 +347,30 @@ After test suite completes, it should report zero failures::
 
   Total: 119 tests, 0 failures, 0 errors
 
+Troubleshooting
+---------------
 
- 
-             
+If you get start up error::
+
+    zope.configuration.xmlconfig.ZopeXMLConfigurationError: File "/home/moo/code/gomobile3/parts/instance/etc/site.zcml", line 15.2-15.23
+        ZopeXMLConfigurationError: File "/home/moo/code/gomobile3/eggs/Plone-3.3.5-py2.4.egg/Products/CMFPlone/configure.zcml", line 116.4-116.60
+        ZopeXMLConfigurationError: File "/home/moo/code/gomobile3/eggs/gomobiletheme.basic-0.9.3-py2.4.egg/gomobiletheme/basic/configure.zcml", line 16.2-16.39
+        ZopeXMLConfigurationError: File "/home/moo/code/gomobile3/eggs/gomobile.mobile-0.9.4-py2.4.egg/gomobile/mobile/configure.zcml", line 19.4-19.34
+        ZopeXMLConfigurationError: File "/home/moo/code/gomobile3/eggs/gomobile.mobile-0.9.4-py2.4.egg/gomobile/mobile/browser/configure.zcml", line 24.4-29.10
+        ImportError: No module named lxml.html
+
+... your lxml library is too old.
+
+Possible workaround
+
+* Update system-wide libxml2 and libxslt
+
+* Create python virtualenv with updated lxml
+
+More info
+
+* http://svn.plone.org/svn/collective/collective.developermanual/trunk/source/troubleshooting/exceptions.txt 
+  (search for System lxml too old)
+  
+  
+               

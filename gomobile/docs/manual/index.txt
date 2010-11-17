@@ -1,7 +1,7 @@
-Go Mobile documentation
+Web and Mobile documentation
 ==================================
 
-This is documentation for mFabrik Web and Mobile mobile CMS product.
+This is documentation for mFabrik Web and Mobile mobile add-on product for Plone CMS.
 
 Table of Content
 ================

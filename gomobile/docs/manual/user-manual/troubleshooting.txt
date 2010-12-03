@@ -56,4 +56,29 @@ You are trying to use Plone 4 main_template.pt on Plone 3 site.
 Please see :doc:`installation instructions </user-manual/installation>` how to fix this.
        
 
+Too many redirects error on mobile device when using NGINX
+-----------------------------------------------------------
+
+If you set up NGINX to run in front of Zope, and set up a virtual host with it like this:
+
+        server {
+                server_name demo.webandmobile.mfabrik.com;
+                location / {
+                        rewrite ^/(.*)$ /VirtualHostBase/http/demo.webandmobile.mfabrik.com:80/Plone/VirtualHostRoot/$1 break;
+                        proxy_pass http://127.0.0.1:8080/;
+                }
+        }
+
+ the site won't work on a mobile device. The mobile browser will return with a too many redirects error. This is because Zope will always get the request from 127.0.0.1:8080 and not from the actual host, due to the redirection. To solve this problem correct your configuration to be like this:
+
+        server {
+                server_name demo.webandmobile.mfabrik.com;
+                location / {
+                        rewrite ^/(.*)$ /VirtualHostBase/http/demo.webandmobile.mfabrik.com:80/Plone/VirtualHostRoot/$1 break;
+                        proxy_pass http://127.0.0.1:8080/;
+                        proxy_set_header        Host            $host;
+                        proxy_set_header        X-Real-IP       $remote_addr;
+                        proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+                }
+        }
 

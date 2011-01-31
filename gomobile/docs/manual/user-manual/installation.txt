@@ -338,6 +338,21 @@ Run::
     
 ...and hope there was no version incompatibilities between products.
 
+Uninstall
+---------
+
+To remove Web And Mobile from your site, uninstall all the following add-ons
+
+* Go Mobile
+
+* Go Mobile Convergence
+
+* Go Mobile Default Theme
+
+.. note ::
+
+        Uninstallation will lose mobile content settings on all content.
+
 Running automatic test suite
 -----------------------------
 

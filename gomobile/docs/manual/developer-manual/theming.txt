@@ -64,6 +64,114 @@ Then you can create your own theme skeleton with::
 Then follow generic `paster instructions for Plone <http://svn.plone.org/svn/collective/collective.developermanual/trunk/source/tutorials/paste.txt>`_ how to include 
 the generated source code egg in ``buildout.cfg``.
 
+Writing your first theme
+---------------------------
+
+Overring the logo
+======================
+
+Change viewlets.py Logo class. In the example below we set it to use logo from our web theme.
+
+        class Logo(base.Logo):
+        
+            # Change logo URI here
+            def getLogoPath(self):
+                return "++resource++plonetheme.isleofback.images/logo.png"
+
+If you are using logo from the web theme resource directory, make sure <resourceDirectory> in theme
+browser/configure.zcml does not have <resourceDirectory layer=""> set. If it's set the resource directory
+is not activate for the mobile theme and the mobile theme cannot access the logo file.
+
+Logo is resized automatically by ``gomobiletheme.basic.viewlets.Logo`` base class.
+
+Change footer
+===================
+
+
+In viewlets.py add::
+        
+        class FooterText(base.FooterText):
+            """ Free-form HTML text at the end of the page """
+        
+            # overrides default footertext
+            
+           
+Add ``templates/footertext.pt``::
+
+.. code-block:: html
+
+        <div id="footer-text" i18n:domain="isleofback.app">
+                Your text goes here.
+        </div>
+
+
+Overriding a web view for mobile
+=======================================
+
+This example will override some Zope 3 browser:page based view for your mobile theme.   
+
+Add file ``views.py`` where all overriden views will be placed::
+
+        """
+        
+            View overrides
+        
+        """
+        
+        __docformat__ = "epytext"
+        __license__ = "GPL"
+        
+        from zope.component import getMultiAdapter
+        
+        from zope.interface import Interface
+        
+        from five import grok
+        
+        from gomobiletheme.basic import viewlets as base
+        from gomobile.mobile.interfaces import IMobileImageProcessor
+        
+        from isleofback.mobi import MessageFactory as _
+        
+        # Layer for which against all our viewlets are registered
+        from interfaces import IThemeLayer
+        
+        # Viewlets are on all content by default.
+        grok.context(Interface)
+        
+        # Use templates directory to search for templates.
+        grok.templatedir('templates')
+        
+        # Viewlets are active only when gomobiletheme.basic theme layer is activated
+        grok.layer(IThemeLayer)
+                
+        class FrontPageView(grok.View):       
+            """ """
+        
+            # The name of the view we override
+            grok.name("isleofbackfrontpage_view")
+            
+            # Use grok.context() here if your view is specific to some content type 
+            
+Then ``templates/frontpageview.pt``::
+
+.. code-block:: html
+
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+              lang="en"
+              metal:use-macro="here/main_template/macros/master"
+              i18n:domain="isleofback.app">
+        <body>
+            <div metal:fill-slot="main">
+                <tal:main-macro metal:define-macro="main">
+                        This is your page payload.    
+                </tal:main-macro>
+            </div>
+        </body>
+        </html>
+
+
+
+
 gomobiletheme.basic
 -------------------
 

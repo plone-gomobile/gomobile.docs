@@ -4,18 +4,18 @@
 
 .. admonition:: Description
 
-        How to build mobile themes for Plone 
+        Creating mobile themes for Plone with Web and Mobile
 
 .. contents :: :local:
 
 Introduction
 ------------
 
-Go Mobile uses standard Plone skin mechanism. You can use whatever theming technique
+Web and Mobile uses standard Plone skin mechanism. You can use whatever theming technique
 you wish, as long as it can be used as a Plone skin.
 
 The only difference between a normal Plone theme and 
-Go Mobile theme is that Go Mobile theme name is read
+Web and Mobile theme is that Web and Mobile theme name is read
 from the property::
 
    portal_properties.mobile_properties.mobile_skin
@@ -24,15 +24,12 @@ Instead of standard::
 
    portal_skins.default_skin
 
-Best practices
---------------
+Namespace and Python package name recommendations
+---------------------------------------------------
 
-* Use namespace "gomobiletheme" for Go Mobile themes
+Use namespace *gomobiletheme.yourthemename* for Web and Mobile themes
 
-* Read :doc:`Transformations </developer-manual/transformations>` for info about different CSS files
-  and their purposes.
-
-Creating your mobile theme
+Creating a mobile theme
 ---------------------------
 
 You can include ``paster`` command in your ``buildout.cfg``
@@ -267,6 +264,12 @@ HTML content transformations
 All template code which contains WYSIWYG editable HTML should run through 
 :doc:`HTML processor </developer-manual/transformations>` to make it mobile compatible.
 
+Different CSS files
+========================
+
+Read :doc:`Transformations </developer-manual/transformations>` chapter for info about different CSS files
+and their purposes.
+
 Theme examples
 -----------------------
 
@@ -281,5 +284,5 @@ Plone 3 compatibility
 to maintain backwards compatibility with Plone 3.
 Please see ``gomobiltheme.basic`` ``README.txt``
 
-Top actions viewlet (search icon, contact icon) is not supported on Plone 3
+
 

@@ -67,6 +67,23 @@ the generated source code egg in ``buildout.cfg``.
 Writing your first theme
 ---------------------------
 
+Theme layer is mobile aware
+===========================
+
+All mobile views and viewlets are registered against your theme layer, which is a sublass
+of mobile layer - this way mobile views do not conflict with web views and cannot
+be accidentally exposed to web. When you generate a new theme you will get ``.interfaces.IThemeLayer`` class
+for this purpose.
+
+Also there exists an old tyle skins layer folder for mobile specific page template overrides.
+
+five.grok used
+==============
+
+gomobiletheme.basic uses five.grok for viewlets and static media.
+
+For more information see `developer manual documentation regarding grok and five.grok <http://collective-docs.plone.org/components/grok.html>`_.
+
 Overring the logo
 ======================
 
@@ -87,7 +104,6 @@ Logo is resized automatically by ``gomobiletheme.basic.viewlets.Logo`` base clas
 Change footer
 ===================
 
-
 In viewlets.py add::
         
         class FooterText(base.FooterText):
@@ -105,7 +121,7 @@ Add ``templates/footertext.pt``::
         </div>
 
 
-Overriding a web view for mobile
+Overriding a browser view for mobile
 =======================================
 
 This example will override some Zope 3 browser:page based view for your mobile theme.   
@@ -170,92 +186,36 @@ Then ``templates/frontpageview.pt``::
         </html>
 
 
+Controlling automatic mobile folder listing
+================================================
 
+Mobile folder listing is enabled automatically to all content types.
+To fine-tune its usage for your site you can override the viewlet::
 
-gomobiletheme.basic
--------------------
-
-A basic Plone 4 Sunburst like theme is supplied with Go Mobile for Plone (gomobiletheme.basic package).
-It is recommended that you recycle theme viewlets from this package.
-
-See plonecommunity.app example how to do this.
-
-Below are some notes for theming,  used by gomobiletheme.basic 
-You may or may not opt-in to use these practices.
-
-* `gomobiletheme.basic README <http://plonegomobile.googlecode.com/svn/gomobiletheme.basic/trunk/README.txt>`_ 
-
-Notes
-=====
-
-* Top actions viewlet (search icon, contact icon) is not supported on Plone 3
-
-Customization examples
------------------------
-
-One maintained public example exists
-
-* plonecommunity.mobi `site <http://plonecommunity.mobi>`_ and the `source code <http://plonegomobile.googlecode.com/svn/trunk/gomobile/plonecommunity.app>`_
-
-Plone 3 compatibility
-======================
-
-``gomobiletheme.basic`` has some special arrangemenets
-to maintain backwards compatibility with Plone 3.
-Please see ``gomobiltheme.basic`` ``README.txt``
-file for more information.
-
-five.grok used
-==============
-
-gomobiletheme.basic uses five.grok for viewlets and static media - this differs
-from old Plone 3 practice.
-
-Inheriting templates
-++++++++++++++++++++
-
-You can recycle and modify viewlets given in gomobiletheme.basic package in your custom theme.
-
-Make sure five.grok is initializer properly in your product (five.grok directive in configure.zcml).
-
-Create a viewlets.py code with the followind content::
-
+        class MobileFolderListing(grok.Viewlet):
         
-        from zope.interface import Interface
-        from five import grok
-        
-        from collective.fastview.utilities import fix_grok_template_inheritance
-        from gomobiletheme.basic import viewlets as base
-        from gomobiletheme.basic.viewlets import MainViewletManager
-        from plonecommunity.app.interfaces import IThemeLayer
-        
-        # Viewlets are on all content by default.
-        grok.context(Interface)
-        
-        # Use templates directory to search for templates.
-        grok.templatedir("templates")
-        
-        # Viewlets are active only when the theme layer is activated
-        # 1) You must run add-on installer for your add-on product quick installer
-        # 2) You must access the site through mobile URL
-        grok.layer(IThemeLayer)
-        
-        # Use this viewlet manager for mobile viewlets
-        grok.viewletmanager(MainViewletManager)
+            def hasListing(self):
+                """
+                Check whether mobile folder listing is enabled for a particular content type.
+                """        
+                return False
 
-Since there is a problem with Grok 1.0 template inheritance (only Grok 1.0 works with Plone),
-you need to specially define if you want to use parent class templates instead of overriding
-templates in your viewlets.py code::
+Remember to add (empty) mobilefolderlisting.pt also, or copy it from ``gomobiletheme.basic``.
 
-        class Logo(base.Logo):    
-            """ Mobile site logo """
-            
-            def getLogoName(self):
-                return "++resource++plonecommunity.app/plone-logo-white-on-blue.png"
-        
-        # Fix for grok 1.0 template inheritance
-        # https://bugs.launchpad.net/grok/+bug/255005
-        fix_grok_template_inheritance(Logo, base.Logo)
+Making your own touch friendly link listing
+=============================================
+
+Use the following mark-up in the template::
+
+         <ul class="button-links">
+                    <li>
+                        <a tal:attributes="href item/absolute_url">
+                            <span class="button-body">
+                                <span class="button-inner" tal:content="item/Title" />
+                            </span>
+                        </a>
+                    </li>
+            </ul>
 
 Static media
 ============
@@ -296,191 +256,30 @@ No viewlet managers
 collective.fastview add-on is used to render viewlets directly and there are no viewlet managers in mobile theme.
 All mobile viewlets are registered against viewlet manager gomobiletheme.basic.viewlets.MainViewletManager.
 
-Theme layer is mobile aware
-===========================
-
-All mobile views and viewlets are registered against your theme layer, which is a sublass
-of mobile layer - this way mobile views do not conflict with web views and cannot
-be accidentally exposed to web.
-
-See plonecommunity.app.interfaces for the example.
-
-Avoid old style skins folder
-============================
-
-For basic themes you generally don't need to customize main_template or old skin layers files,
-so you do not need to have *skins* structure in your own theme
+Image transformations
+========================
   
 * <img> images should be run through :doc:`mobile image resize </developer-manual/transformations>`
 
-* All template code which contains WYSIWYG editable HTML should run through 
-  :doc:`HTML processor </developer-manual/transformations>` to make it mobile compatible.
+HTML content transformations
+============================== 
 
-Mobile theme specials
-=====================
+All template code which contains WYSIWYG editable HTML should run through 
+:doc:`HTML processor </developer-manual/transformations>` to make it mobile compatible.
 
-apple-touch-icon.png
-++++++++++++++++++++
+Theme examples
+-----------------------
 
-This image is used as a bookmark icon by iPod/iPad/iPhone.
+One maintained public example exists
 
-Examples
---------
+* plonecommunity.mobi `site <http://plonecommunity.mobi>`_ and the `source code <http://plonegomobile.googlecode.com/svn/trunk/gomobile/plonecommunity.app>`_
 
-Full examples
-=============
+Plone 3 compatibility
+---------------------------
 
-See
+``gomobiletheme.basic`` has some special arrangemenets
+to maintain backwards compatibility with Plone 3.
+Please see ``gomobiltheme.basic`` ``README.txt``
 
-* `plonecommunity.app <http://code.google.com/p/plonegomobile/source/browse/trunk/gomobile/#gomobile/plonecommunity.app/plonecommunity/app>`_
-  for basic customizations (how to change logo, CSS files) and declare your own skin
-
-Creating a theme skeleton
-=========================
-
-TODO: Full tutorial will be done.
-
-Use Paster command to create a Plone 3 application.
-
-Copy necessary changes by looking example in plonecommunity.app
-
-* setup.py
-
-* configure.zcml
-
-* interfaces.py
-
-* viewlets.py
-
-* profiles/default/skins.xml
-
-* profiles/defaukt/propertiestool.xml
-
-* Copy static media folder from gomobiletheme.basic as is.
-
-* Override head viewlet in viewlets.py
-
-* Override logo viewlet in viewlets.py
-
-* If you need to change main_template.pt, you need to also copy and modify from gomobiletheme.basic
-
-        * skins/gomobiletheme_basic/main_template.pt to skins/yourtheme/main_template.pt
-        
-        * profiles/default/skins.xml
-
-        * Add skins registration to configure.zcml
-
-Declaring your theme
-====================
-
-The following steps are needed to make Plone site aware of your theme,
-it is installable through add-on instalelr
-and it correctly extends the existing Go Mobile Default Theme.
-
-* Create propertiestool.xml which will set your theme as active mobile theme::
-
-	<?xml version="1.0"?>
-	<object name="portal_properties" meta_type="Plone Properties Tool">
-	 <object name="mobile_properties" meta_type="Plone Property Sheet" title="Mobile site specific settings">
-	  <property name="mobile_skin" type="string" purge="False">mFabrik Mobile Theme</property>	
-	 </object>
-	</object>
-	
-* Declare dependency to Go Mobile Default Theme skin layer in skins.xml::
-
-	<?xml version="1.0"?>
-	<object name="portal_skins" allow_any="False" cookie_persistence="False">
-	
-	 <skin-path name="mFabrik Mobile Theme" based-on="Go Mobile Default Theme">
-	 </skin-path>
-	
-	</object>
-
-* Declare your add-on installer profile
-
-::
-
-  <genericsetup:registerProfile
-      name="default"
-      title="mFabrik Mobile Theme"
-      directory="profiles/default"
-      description='mFabrik theme for mobile sites'
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
-* Declare your theme interface which subclasses Go Mobile Default Theme::
-
-	import gomobiletheme.basic.interfaces as base
-	
-	class IThemeLayer(base.IThemeLayer):
-	    """ mFabrik mobile theme layer.
-	
-	    """
-
-* Declare your theme layer for Zope
-
-::
- 
-  <interface
-    interface=".interfaces.IThemeLayer"
-    type="zope.publisher.interfaces.browser.IBrowserSkinType"
-    name="mFabrik Mobile Theme"
-    />
-
-Note that two latter steps differ if five.grok *grok.skin()* directive is used.
-
-Declaring dependency to gomobiletheme.basic
-============================================
-
-To use its main_template.pt add profiles/default/skins.xml to your theme package::
-
-        <?xml version="1.0"?>
-        
-        <object name="portal_skins" allow_any="False" cookie_persistence="False">
-        
-                 <!-- Declare dependency to gomobiletheme.basic so that its skin layeres are also included when this theme is installed -->
-                 <skin-path name="plonecommunity_mobi theme" based-on="Go Mobile Default Theme">
-                 </skin-path>
-                
-        
-        </object>
-        
-Overriding the logo
-===================
-
-Add to your viewlets.py::
-        
-        from collective.fastview.utilities import fix_grok_template_inheritance
-        from gomobiletheme.basic import viewlets as base
-        
-        # ..All other grok theme setup code here...
-
-        class Logo(base.Logo):    
-            """ Mobile site logo """
-            
-            def getLogoName(self):
-                return "++resource++plonecommunity.app/plone-logo-white-on-blue.png"
-        
-        # Fix for grok 1.0 template inheritance
-        # https://bugs.launchpad.net/grok/+bug/255005
-        fix_grok_template_inheritance(Logo, base.Logo)
-
-Plone 3 support
----------------
-
-Your theme skins.xml must declare support for ``gomobiletheme_plone3``::
-
-        <?xml version="1.0"?>
-        <object name="portal_skins" allow_any="False" cookie_persistence="False">
-        
-         <object name="saariselka_mobi"
-            meta_type="Filesystem Directory View"
-            directory="saariselka.mobi:skins/saariselka_mobi"/>
-        
-         <skin-path name="saariselka.mobi" based-on="Plone Go Mobile Default Theme">
-          <layer name="saariselka_mobi" insert-after="custom"/>
-          <layer name="gomobiletheme_plone3" insert-after="saariselka_mobi"/>
-         </skin-path>
-        
-        </object>
+Top actions viewlet (search icon, contact icon) is not supported on Plone 3
 

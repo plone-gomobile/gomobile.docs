@@ -84,19 +84,21 @@ For more information see `developer manual documentation regarding grok and five
 Overring the logo
 ======================
 
-Change viewlets.py Logo class. In the example below we set it to use logo from our web theme.
+Change the generated gomobile.yourcompany.viewlets.Logo class. 
+In the example below we set it to use logo from our web theme.
 
         class Logo(base.Logo):
         
             # Change logo URI here
             def getLogoPath(self):
-                return "++resource++plonetheme.isleofback.images/logo.png"
+                return "++resource++plonetheme.yourwebtheme.images/logo.png"
 
 If you are using logo from the web theme resource directory, make sure <resourceDirectory> in theme
 browser/configure.zcml does not have <resourceDirectory layer=""> set. If it's set the resource directory
 is not activate for the mobile theme and the mobile theme cannot access the logo file.
 
-Logo is resized automatically by ``gomobiletheme.basic.viewlets.Logo`` base class.
+The logo image is resized automatically by ``gomobiletheme.basic.viewlets.Logo`` base class
+for different mobile screen resolutions.
 
 Change footer
 ===================
@@ -106,10 +108,11 @@ In viewlets.py add::
         class FooterText(base.FooterText):
             """ Free-form HTML text at the end of the page """
         
-            # overrides default footertext
+            # the presence of this viewlet includes a new page template 
+            # and overrides default footertext
             
            
-Add ``templates/footertext.pt``::
+Add new file to the your theme package ``templates/footertext.pt``::
 
 .. code-block:: html
 
@@ -217,7 +220,7 @@ Use the following mark-up in the template::
 Setting CSS and JS locations
 ==============================
 
-Static media is provided by five.grok *static* folder mechanism.
+Mobile theme static CSS and Javascript resources are provided by five.grok *static* folder mechanism.
 
 Different CSS files
 ++++++++++++++++++++++++

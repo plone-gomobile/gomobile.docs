@@ -22,7 +22,8 @@ More info
 .. note ::
 
    mFabrik name or organization is no longer associated with the project. Please
-   use the discussion group as your primary contact channel.
+   use the discussion group as your primary contact channel. It's all yours now,
+   under GPL license.
 
 Table of Content
 ================

@@ -173,7 +173,7 @@ htmlhelp_basename = 'WebAndMobileForPloneManual'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'webandmobile.tex', u'Web and Mobile Documentation',
-   u'mFabrik Research Oy', 'manual'),
+   u'Red Innovation Oy', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

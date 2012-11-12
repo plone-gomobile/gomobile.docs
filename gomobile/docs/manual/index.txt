@@ -1,7 +1,28 @@
 Web and Mobile documentation
 ==================================
 
-This is documentation for mFabrik Web and Mobile mobile add-on product for Plone CMS.
+This is documentation for Web and Mobile mobile add-on product for `Plone CMS <http://plone.org>`_.
+
+.. warn ::
+
+   The active development on this project has ceased. The project has been migrated
+   to Github. You are welcome to submit patches through Github and open an issue
+   against a package to ask a new release.
+
+The future Plone mobile development continues in `Plomobile project <https://github.com/miohtama/plomobile>`_.
+
+More info
+
+* `Discussion group <https://groups.google.com/forum/?fromgroups#!forum/gomobile-dev>`_
+
+* `Github project page <https://github.com/plone-gomobile>`_
+
+* `Documentation home page <https://web-and-mobile.readthedocs.org/en/latest/>´_
+
+.. note ::
+
+   mFabrik name or organization is no longer associated with the project. Please
+   use the discussion group as your primary contact channel.
 
 Table of Content
 ================

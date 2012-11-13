@@ -17,7 +17,7 @@ More info
 
 * `Github project page <https://github.com/plone-gomobile>`_
 
-* `Documentation home page <https://web-and-mobile.readthedocs.org/en/latest/>´_
+* `Documentation home page <https://web-and-mobile.readthedocs.org/en/latest/>`_
 
 .. note ::
 
